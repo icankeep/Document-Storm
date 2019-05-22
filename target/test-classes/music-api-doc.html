@@ -1,0 +1,1645 @@
+<hr/>
+
+<p>layout: archive
+title: &quot;NeteaseCloudMusicApi&quot;
+permalink: /musicapi/
+author<em>profile: true
+redirect</em>from:
+  - /musicapi.html</p>
+
+<hr/>
+
+<h2>目录</h2>
+
+<ul><li><a href="#功能特性">功能特性</a></li><li><a href="#接口使用说明">接口使用说明</a></li><li><a href="#接口文档">接口文档</a></li></ul>
+
+<h2>功能特性</h2>
+
+<ol><li>登录</li><li>刷新登录</li><li>发送验证码</li><li>校验验证码</li><li>注册(修改密码)</li><li>获取用户信息 , 歌单，收藏，mv, dj 数量</li><li>获取用户歌单</li><li>获取用户电台</li><li>获取用户关注列表</li><li>获取用户粉丝列表</li><li>获取用户动态</li><li>获取用户播放记录</li><li>获取精品歌单</li><li>获取歌单详情</li><li>搜索</li><li>搜索建议</li><li>获取歌词</li><li>歌曲评论</li><li>收藏单曲到歌单</li><li>专辑评论</li><li>歌单评论</li><li>mv 评论</li><li>电台节目评论</li><li>banner</li><li>获取歌曲详情</li><li>获取专辑内容</li><li>获取歌手单曲</li><li>获取歌手 mv</li><li>获取歌手专辑</li><li>获取歌手描述</li><li>获取相似歌手</li><li>获取相似歌单</li><li>相似 mv</li><li>获取相似音乐</li><li>获取最近 5 个听了这首歌的用户</li><li>获取每日推荐歌单</li><li>获取每日推荐歌曲</li><li>私人 FM</li><li>签到</li><li>喜欢音乐</li><li>垃圾桶</li><li>歌单 ( 网友精选碟 )</li><li>新碟上架</li><li>热门歌手</li><li>最新 mv</li><li>推荐 mv</li><li>推荐歌单</li><li>推荐新音乐</li><li>推荐电台</li><li>推荐节目</li><li>独家放送</li><li>mv 排行</li><li>获取 mv 数据</li><li>播放 mv/视频</li><li>排行榜</li><li>歌手榜</li><li>云盘</li><li>电台 - 推荐</li><li>电台 - 分类</li><li>电台 - 分类推荐</li><li>电台 - 订阅</li><li>电台 - 详情</li><li>电台 - 节目</li><li>给评论点赞</li><li>获取动态</li><li>获取热搜</li><li>发送私信</li><li>发送私信歌单</li><li>新建歌单</li><li>收藏/取消收藏歌单</li><li>歌单分类</li><li>收藏的歌手列表</li><li>订阅的电台列表</li><li>相关歌单推荐</li><li>付费精选接口</li><li>音乐是否可用检查接口</li><li>登录状态</li><li>获取视频数据</li><li>发送/删除评论</li><li>热门评论</li><li>视频评论</li><li>退出登录</li><li>所有榜单</li><li>所有榜单内容摘要</li><li>收藏视频</li><li>收藏 MV</li><li>视频详情</li><li>相关视频</li><li>关注用户</li><li>新歌速递</li><li>喜欢音乐列表(无序)</li><li>收藏的 MV 列表</li><li>获取最新专辑</li><li>听歌打卡</li><li>获取视频标签下的视频</li><li>已收藏专辑列表</li><li>获取动态评论</li><li>歌单收藏者列表</li><li>云盘歌曲删除</li><li>热门话题</li><li>电台 - 推荐类型</li><li>电台 - 非热门类型</li><li>电台 - 今日优选</li><li>心动模式/智能播放</li><li>转发动态</li><li>删除动态</li><li>分享歌曲、歌单、mv、电台、电台节目到动态</li><li>通知-私信</li><li>通知-评论</li><li>通知-@我</li><li>通知-通知</li><li>设置</li><li>云盘数据详情</li><li>私信内容</li><li>我的数字专辑</li></ol>
+
+<h2>接口使用说明</h2>
+
+<p>服务器ip:<code>47.100.45.234</code></p>
+
+<p>调用接口url: <code>服务器ip + 接口地址即可</code></p>
+
+<p>如: <code>http://47.100.45.234/login/cellphone?phone=xxx&amp;password=yyy</code></p>
+
+<h2>接口文档</h2>
+
+<h2>登录</h2>
+
+<p>说明 : 登录有两个接口</p>
+
+<h3>1. 手机登录</h3>
+
+<p><strong>必选参数 :</strong> <code>phone</code>: 手机号码 <code>password</code>: 密码</p>
+
+<p><strong>接口地址 :</strong> <code>/login/cellphone</code></p>
+
+<p><strong>可选参数 :</strong> <code>countrycode</code>: 国家码，用于国外手机号登陆，例如美国传入：<code>1</code></p>
+
+<p><strong>调用例子 :</strong> <code>/login/cellphone?phone=xxx&amp;password=yyy</code></p>
+
+<h3>2. 邮箱登录</h3>
+
+<p><strong>必选参数 :</strong> <code>email</code>: 163 网易邮箱<br/><code>password</code>: 密码</p>
+
+<p><strong>接口地址 :</strong> <code>/login</code></p>
+
+<p><strong>调用例子 :</strong> <code>/login?email=xxx@163.com&amp;password=yyy</code></p>
+
+<p>完成登录后 , 会在浏览器保存一个 Cookies 用作登录凭证 , 大部分 API 都需要用到这个
+Cookies</p>
+
+<h3>注意</h3>
+
+<p>调用登录接口的速度比调用其他接口慢 , 因为登录过程调用了加密算法</p>
+
+<h2>刷新登录</h2>
+
+<p>说明 : 调用此接口 , 可刷新登录状态</p>
+
+<p><strong>调用例子 :</strong> <code>/login/refresh</code></p>
+
+<h2>发送验证码</h2>
+
+<p>说明 : 调用此接口 ,传入手机号码, 可发送验证码</p>
+
+<p><strong>必选参数 :</strong> <code>phone</code>: 手机号码  </p>
+
+<p><strong>可选参数 :</strong>
+<code>ctcode</code>:  国家区号,默认86即中国</p>
+
+<p><strong>接口地址 :</strong> <code>/captch/sent</code></p>
+
+<p><strong>调用例子 :</strong> <code>/captch/sent?phone=13xxx</code></p>
+
+<h2>验证验证码</h2>
+
+<p>说明 : 调用此接口 ,传入手机号码和验证码, 可校验验证码是否正确</p>
+
+<p><strong>必选参数 :</strong> <code>phone</code>: 手机号码  </p>
+
+<p><code>captcha</code>: 验证码</p>
+
+<p><strong>可选参数 :</strong></p>
+
+<p><code>ctcode</code>:  国家区号,默认86即中国</p>
+
+<p><strong>接口地址 :</strong> <code>/captch/verify</code></p>
+
+<p><strong>调用例子 :</strong> <code>/captch/verify?phone=13xxx&amp;captcha=1597</code></p>
+
+<h2>注册(修改密码)</h2>
+
+<p>说明 : 调用此接口 ,传入手机号码和验证码,密码,昵称, 可注册网易云音乐账号(同时可修改密码)</p>
+
+<p><strong>必选参数 :</strong> <code>phone</code>: 手机号码  </p>
+
+<p><code>captcha</code>: 验证码</p>
+
+<p><code>phone</code> :  手机号码</p>
+
+<p><code>password</code>: 密码</p>
+
+<p><code>nickname</code>: 昵称</p>
+
+<p><strong>接口地址 :</strong> <code>/captch/register</code></p>
+
+<p><strong>调用例子 :</strong> <code>/captch/register?phone=13xxx&amp;password=xxxxx&amp;captcha=1234&amp;nickname=binary1345</code></p>
+
+<h2>退出登录</h2>
+
+<p>说明 : 调用此接口 , 可退出登录</p>
+
+<p><strong>调用例子 :</strong> <code>/logout</code></p>
+
+<h2>登录状态</h2>
+
+<p>说明 : 调用此接口,可获取登录状态</p>
+
+<p><strong>接口地址 :</strong> <code>/login/status</code></p>
+
+<h2>获取用户详情</h2>
+
+<p>说明 : 登陆后调用此接口 , 传入用户 id, 可以获取用户详情</p>
+
+<p><strong>必选参数 :</strong> <code>uid</code> : 用户 id</p>
+
+<p><strong>接口地址 :</strong> <code>/user/detail</code></p>
+
+<p><strong>调用例子 :</strong> <code>/user/detail?uid=32953014</code></p>
+
+<h2>获取用户信息 , 歌单，收藏，mv, dj 数量</h2>
+
+<p>说明 : 登陆后调用此接口 , 可以获取用户信息</p>
+
+<p><strong>接口地址 :</strong> <code>/user/subcount</code></p>
+
+<p><strong>调用例子 :</strong> <code>/user/subcount</code></p>
+
+<h2>更新用户信息</h2>
+
+<p>说明 : 登陆后调用此接口 , 传入相关信息,可以更新用户信息</p>
+
+<p><strong>必选参数 :</strong></p>
+
+<p><code></code>`
+gender: 性别 0:保密 1:男性 2:女性</p>
+
+<p>birthday: 出生日期,时间戳 unix timestamp</p>
+
+<p>nickname: 用户昵称</p>
+
+<p>province: 省份id</p>
+
+<p>city: 城市id</p>
+
+<p>signature：用户签名
+<code></code>`</p>
+
+<p><strong>接口地址 :</strong> <code>/user/subcount</code></p>
+
+<p><strong>调用例子 :</strong> <code>/user/update/?gender=0&amp;signature=测试签名&amp;city=440300&amp;nickname=binary&amp;birthday=1525918298004&amp;province=440000</code></p>
+
+<h2>获取用户歌单</h2>
+
+<p>说明 : 登陆后调用此接口 , 传入用户 id, 可以获取用户歌单</p>
+
+<p><strong>必选参数 :</strong> <code>uid</code> : 用户 id</p>
+
+<p><strong>接口地址 :</strong> <code>/user/playlist</code></p>
+
+<p><strong>调用例子 :</strong> <code>/user/playlist?uid=32953014</code></p>
+
+<h2>更新歌单</h2>
+
+<p>说明 : 登陆后调用此接口,可以更新用户歌单
+参数:</p>
+
+<p><code></code>`
+id:歌单id</p>
+
+<p>name:歌单名字=</p>
+
+<p>desc:歌单描述</p>
+
+<p>tags:歌单tag
+<code></code>`</p>
+
+<p><strong>接口地址 :</strong> <code>/playlist/update</code></p>
+
+<p><strong>调用例子 :</strong> <code>/playlist/update/?id=24381616&amp;name=新歌单&amp;desc=描述&amp;tags=学习</code></p>
+
+<h2>获取用户电台</h2>
+
+<p>说明 : 登陆后调用此接口 , 传入用户 id, 可以获取用户电台</p>
+
+<p><strong>必选参数 :</strong> <code>uid</code> : 用户 id</p>
+
+<p><strong>接口地址 :</strong> <code>/user/dj</code></p>
+
+<p><strong>调用例子 :</strong> <code>/user/dj?uid=32953014</code></p>
+
+<h2>获取用户关注列表</h2>
+
+<p>说明 : 登陆后调用此接口 , 传入用户 id, 可以获取用户关注列表</p>
+
+<p><strong>必选参数 :</strong> <code>uid</code> : 用户 id</p>
+
+<p><strong>可选参数 :</strong></p>
+
+<p><code>limit</code> : 返回数量 , 默认为 30</p>
+
+<p><code>offset</code> : 偏移数量，用于分页 , 如
+: 如 :( 页数 -1)*30, 其中 30 为 limit 的值 , 默认为 0</p>
+
+<p><strong>接口地址 :</strong> <code>/user/follows</code></p>
+
+<p><strong>调用例子 :</strong> <code>/user/follows?uid=32953014</code></p>
+
+<h2>获取用户粉丝列表</h2>
+
+<p>说明 : 登陆后调用此接口 , 传入用户 id, 可以获取用户粉丝列表</p>
+
+<p><strong>必选参数 :</strong> <code>uid</code> : 用户 id</p>
+
+<p><strong>可选参数 :</strong> <code>limit</code> : 返回数量 , 默认为 30 <code>offset</code> : 偏移数量，用于分页 , 如
+: 如 :( 页数 -1)*30, 其中 30 为 limit 的值 , 默认为 0</p>
+
+<p><strong>接口地址 :</strong> <code>/user/followeds</code></p>
+
+<p><strong>调用例子 :</strong> <code>/user/followeds?uid=32953014</code></p>
+
+<h2>获取用户动态</h2>
+
+<p>说明 : 登陆后调用此接口 , 传入用户 id, 可以获取用户动态</p>
+
+<p><strong>必选参数 :</strong> <code>uid</code> : 用户 id</p>
+
+<p><strong>接口地址 :</strong> <code>/user/event</code></p>
+
+<p><strong>调用例子 :</strong> <code>/user/event?uid=32953014</code></p>
+
+<h2>转发用户动态</h2>
+
+<p>说明 : 登陆后调用此接口 ,可以转发用户动态</p>
+
+<p><strong>必选参数 :</strong> <code>uid</code> : 用户 id  </p>
+
+<p><code>evId</code> : 动态 id  </p>
+
+<p><code>forwards</code> : 转发的评论</p>
+
+<p><strong>接口地址 :</strong> <code>/event/forward</code></p>
+
+<p><strong>调用例子 :</strong> <code>/event/forward?evId=6712917601&amp;uid=32953014&amp;forwards=测试内容</code></p>
+
+<h2>删除用户动态</h2>
+
+<p>说明 : 登陆后调用此接口 ,可以删除用户动态</p>
+
+<p><strong>必选参数 :</strong> <code>evId</code> :  动态 id  </p>
+
+<p><strong>接口地址 :</strong> <code>/event/del</code></p>
+
+<p><strong>调用例子 :</strong> <code>/event/del?evId=6712917601</code></p>
+
+<h2>分享歌曲、歌单、mv、电台、电台节目到动态</h2>
+
+<p>说明 : 登陆后调用此接口 ,可以分享歌曲、歌单、mv、电台、电台节目到动态</p>
+
+<p><strong>必选参数 :</strong> <code>id</code> :   资源 id  （歌曲，歌单，mv，电台，电台节目对应 id）</p>
+
+<p><strong>可选参数 :</strong> <code>type</code>: 资源类型，默认歌曲 song，可传 <code>song</code>,<code>playlist</code>,<code>mv</code>,<code>djradio</code>,<code>djprogram</code></p>
+
+<p><code>msg</code>: 内容，140 字限制，支持 emoji，@用户名（<code>/user/follows</code>接口获取的用户名，用户名后和内容应该有空格），图片暂不支持</p>
+
+<p><strong>接口地址 :</strong> <code>/share/resource</code></p>
+
+<p><strong>调用例子 :</strong> <code>/share/resource?id=1297494209&amp;msg=测试</code> <code>/share/resource?type=djradio&amp;id=336355127</code> <code>/share/resource?type=djprogram&amp;id=2061034798</code> <code>/share/resource?type=djprogram&amp;id=2061034798&amp;msg=测试@binaryify 测试</code></p>
+
+<h2>获取动态评论</h2>
+
+<p>说明 : 登陆后调用此接口 , 可以获取动态下评论</p>
+
+<p><strong>必选参数 :</strong> <code>threadId</code> : 动态 id，可通过 <code>/event</code>，<code>/user/event</code> 接口获取</p>
+
+<p><strong>接口地址 :</strong> <code>/comment/event</code></p>
+
+<p><strong>调用例子 :</strong> <code>/comment/event?threadId=A_EV_2_6559519868_32953014</code></p>
+
+<h2>关注/取消关注用户</h2>
+
+<p>说明 : 登陆后调用此接口 , 传入用户 id, 和操作 t,可关注/取消关注用户</p>
+
+<p><strong>必选参数 :</strong></p>
+
+<p><code>id</code> : 用户 id</p>
+
+<p><code>t</code> : <code>1</code>为关注,其他为取消关注</p>
+
+<p><strong>接口地址 :</strong> <code>/follow</code></p>
+
+<p><strong>调用例子 :</strong> <code>/follow?id=32953014&amp;t=1</code></p>
+
+<h2>获取用户播放记录</h2>
+
+<p>说明 : 登陆后调用此接口 , 传入用户 id, 可获取用户播放记录</p>
+
+<p><strong>必选参数 :</strong> <code>uid</code> : 用户 id</p>
+
+<p><strong>可选参数 :</strong> <code>type</code> : type=1 时只返回 weekData, type=0 时返回 allData</p>
+
+<p><strong>接口地址 :</strong> <code>/user/record</code></p>
+
+<p><strong>调用例子 :</strong> <code>/user/record?uid=32953014&amp;type=1</code></p>
+
+<h2>获取热门话题</h2>
+
+<p>说明 : 调用此接口 , 可获取热门话题</p>
+
+<p><strong>可选参数 :</strong> <code>limit</code>: 取出评论数量 , 默认为 20</p>
+
+<p><code>offset</code>: 偏移数量 , 用于分页 , 如 :( 评论页数 -1)*20, 其中 20 为 limit 的值</p>
+
+<p><strong>接口地址 :</strong> <code>/act/hot</code></p>
+
+<p><strong>调用例子 :</strong> <code>/act/hot?limit=30&amp;offset=30</code></p>
+
+<h2>心动模式/智能播放</h2>
+
+<p>说明 : 调用此接口 , 可获取心动模式/智能播放列表
+<strong>必选参数 :</strong> <code>id</code> : 歌曲 id</p>
+
+<p><code>pid</code> : 歌单 id</p>
+
+<p><strong>可选参数 :</strong>
+<code>sid</code> : 要开始播放的歌曲的 id</p>
+
+<p><strong>接口地址 :</strong> <code>/playmode/intelligence/list</code></p>
+
+<p><strong>调用例子 :</strong> <code>/playmode/intelligence/list?id=33894312&amp;pid=24381616</code> , <code>/playmode/intelligence/list?id=33894312&amp;pid=24381616&amp;sid=36871368</code></p>
+
+<h2>获取动态消息</h2>
+
+<p>说明 : 调用此接口 , 可获取各种动态 , 对应网页版网易云，朋友界面里的各种动态消息
+，如分享的视频，音乐，照片等！</p>
+
+<p><strong>必选参数 :</strong>
+<code>pagesize</code> : 每页数据,默认20</p>
+
+<p><code>lasttime</code> : 返回数据的 <code>lasttime</code> ,默认-1,传入上一次返回结果的 lasttime,将会返回下一页的数据</p>
+
+<p><strong>接口地址 :</strong> <code>/event</code></p>
+
+<p><strong>调用例子 :</strong> <code>/event?pagesize=30&amp;lasttime=1556740526369</code></p>
+
+<h2>歌手分类列表</h2>
+
+<p>说明 : 调用此接口,可获取歌手分类列表
+<strong>必选参数 :</strong> <code>cat</code> : 即 category Code,歌手类型,默认 1001,返回华语男歌手数据
+<strong>可选参数 :</strong></p>
+
+<p><code>limit</code> : 返回数量 , 默认为 30</p>
+
+<p><code>offset</code> : 偏移数量，用于分页 , 如
+: 如 :( 页数 -1)*30, 其中 30 为 limit 的值 , 默认为 0
+<code>initial</code>: 按首字母索引查找参数,如 <code>/artist/list?cat=1001&amp;initial=b</code> 返回内容将以 name 字段开头为 b 或者拼音开头为 b 为顺序排列</p>
+
+<p>category Code 取值:</p>
+
+<p><code></code>`
+入驻歌手 5001</p>
+
+<p>华语男歌手 1001</p>
+
+<p>华语女歌手 1002</p>
+
+<p>华语组合/乐队 1003</p>
+
+<p>欧美男歌手 2001</p>
+
+<p>欧美女歌手 2002</p>
+
+<p>欧美组合/乐队 2003</p>
+
+<p>日本男歌手 6001</p>
+
+<p>日本女歌手 6002</p>
+
+<p>日本组合/乐队 6003</p>
+
+<p>韩国男歌手 7001</p>
+
+<p>韩国女歌手 7002</p>
+
+<p>韩国组合/乐队 7003</p>
+
+<p>其他男歌手 4001</p>
+
+<p>其他女歌手 4002</p>
+
+<p>其他组合/乐队 4003
+<code></code>`</p>
+
+<p><strong>接口地址 :</strong> <code>/artist/list</code></p>
+
+<p><strong>调用例子 :</strong> <code>/artist/list?cat=1001</code></p>
+
+<h2>收藏/取消收藏歌手</h2>
+
+<p>说明 : 调用此接口,可收藏歌手</p>
+
+<p><strong>必选参数 :</strong></p>
+
+<p><code>artistId</code> : 歌手 id</p>
+
+<p><code>t</code>:操作,1 为收藏,其他为取消收藏</p>
+
+<p><strong>接口地址 :</strong> <code>/artist/sub</code></p>
+
+<p><strong>调用例子 :</strong> <code>/artist/sub?id=6452&amp;t=1</code></p>
+
+<h2>收藏的歌手列表</h2>
+
+<p>说明 : 调用此接口,可获取收藏的歌手列表</p>
+
+<p><strong>接口地址 :</strong> <code>/artist/sublist</code></p>
+
+<p><strong>调用例子 :</strong> <code>/artist/sublist</code></p>
+
+<h2>收藏视频</h2>
+
+<p>说明 : 调用此接口,可收藏视频</p>
+
+<p><strong>必选参数 :</strong></p>
+
+<p><code>id</code> : 视频 id</p>
+
+<p><code>t</code> : 1 为收藏,其他为取消收藏</p>
+
+<p><strong>接口地址 :</strong> <code>/video/sub</code></p>
+
+<p><strong>调用例子 :</strong> <code>/video/sub</code></p>
+
+<h2>收藏 MV</h2>
+
+<p>说明 : 调用此接口,可收藏 MV</p>
+
+<p><strong>必选参数 :</strong></p>
+
+<p><code>id</code> : MV id</p>
+
+<p><code>t</code> : 1 为收藏,其他为取消收藏</p>
+
+<p><strong>接口地址 :</strong> <code>/mv/sub</code></p>
+
+<p><strong>调用例子 :</strong> <code>/mv/sub</code></p>
+
+<h2>收藏的 MV 列表</h2>
+
+<p>说明 : 调用此接口,可获取收藏的 MV 列表</p>
+
+<p><strong>接口地址 :</strong> <code>/mv/sublist</code></p>
+
+<p><strong>调用例子 :</strong> <code>/mv/sublist</code></p>
+
+<h2>歌单分类</h2>
+
+<p>说明 : 调用此接口,可获取歌单分类,包含 category 信息</p>
+
+<p><strong>接口地址 :</strong> <code>/playlist/catlist</code></p>
+
+<p><strong>调用例子 :</strong> <code>/playlist/catlist</code></p>
+
+<h2>热门歌单分类</h2>
+
+<p>说明 : 调用此接口,可获取歌单分类,包含 category 信息</p>
+
+<p><strong>接口地址 :</strong> <code>/playlist/hot</code></p>
+
+<p><strong>调用例子 :</strong> <code>/playlist/hot</code></p>
+
+<h2>歌单 ( 网友精选碟 )</h2>
+
+<p>说明 : 调用此接口 , 可获取网友精选碟歌单</p>
+
+<p><strong>可选参数 :</strong> <code>order</code>: 可选值为 &#39;new&#39; 和 &#39;hot&#39;, 分别对应最新和最热 , 默认为
+&#39;hot&#39;</p>
+
+<p><code>cat</code>:<code>cat</code>: tag, 比如 &quot; 华语 &quot;、&quot; 古风 &quot; 、&quot; 欧美 &quot;、&quot; 流行 &quot;, 默认为
+&quot;全部&quot;,可从歌单分类接口获取(/playlist/catlist)</p>
+
+<p><strong>接口地址 :</strong> <code>/top/playlist</code></p>
+
+<p><strong>调用例子 :</strong> <code>/top/playlist?limit=10&amp;order=new</code></p>
+
+<h2>获取精品歌单</h2>
+
+<p>说明 : 调用此接口 , 可获取精品歌单</p>
+
+<p><strong>可选参数 :</strong> <code>cat</code>: tag, 比如 &quot; 华语 &quot;、&quot; 古风 &quot; 、&quot; 欧美 &quot;、&quot; 流行 &quot;, 默认为
+&quot;全部&quot;,可从歌单分类接口获取(/playlist/catlist)</p>
+
+<p><code>limit</code>: 取出歌单数量 , 默认为 20</p>
+
+<p><code>before</code>: 分页参数,取上一页最后一个歌单的 <code>updateTime</code> 获取下一页数据</p>
+
+<p><strong>接口地址 :</strong> <code>/top/playlist/highquality</code></p>
+
+<p><strong>调用例子 :</strong> <code>http://localhost:3000/top/playlist/highquality?before=1503639064232&amp;limit=3</code></p>
+
+<h2>相关歌单推荐</h2>
+
+<p>说明 : 调用此接口,传入歌单 id 可获取相关歌单(对应页面 <a href="https://music.163.com/#/playlist?id=1">https://music.163.com/#/playlist?id=1</a>)</p>
+
+<p><strong>必选参数 :</strong> <code>id</code> : 歌单 id</p>
+
+<p><strong>接口地址 :</strong> <code>/related/playlist</code></p>
+
+<p><strong>调用例子 :</strong> <code>/related/playlist?id=1</code></p>
+
+<h2>获取歌单详情</h2>
+
+<p>说明 : 歌单能看到歌单名字 , 但看不到具体歌单内容 , 调用此接口 , 传入歌单 id, 可
+以获取对应歌单内的所有的音乐，但是返回的trackIds是完整的，tracks 则是不完整的，可拿全部 trackIds 请求一次 <code>song/detail</code> 接口获取所有歌曲的详情</p>
+
+<p><strong>必选参数 :</strong> <code>id</code> : 歌单 id</p>
+
+<p><strong>可选参数 :</strong> <code>s</code> : 歌单最近的 s 个收藏者</p>
+
+<p><strong>接口地址 :</strong> <code>/playlist/detail</code></p>
+
+<p><strong>调用例子 :</strong> <code>/playlist/detail?id=24381616</code></p>
+
+<h2>获取音乐 url</h2>
+
+<p>说明 : 使用歌单详情接口后 , 能得到的音乐的 id, 但不能得到的音乐 url, 调用此接口
+, 传入的音乐 id( 可多个 , 用逗号隔开 ), 可以获取对应的音乐的 url( 不需要登录 )</p>
+
+<blockquote><p>注 : 获取的 url 会 403
+解决方案是当获取到音乐的 id 后，将
+https://music.163.com/song/media/outer/url?id=id.mp3 以 src 赋予 Audio 即可播放</p></blockquote>
+
+<p><strong>必选参数 :</strong> <code>id</code> : 音乐 id</p>
+
+<p><strong>可选参数 :</strong> <code>br</code>: 码率,默认设置了 999000 即最大码率,如果要 320k 则可设置为 320000,其他类推</p>
+
+<p><strong>接口地址 :</strong> <code>/song/url</code></p>
+
+<p><strong>调用例子 :</strong> <code>/song/url?id=33894312</code> <code>/song/url?id=405998841,33894312</code></p>
+
+<h2>音乐是否可用</h2>
+
+<p>说明: 调用此接口,传入歌曲 id, 可获取音乐是否可用,返回 <code>{ success: true, message: &#39;ok&#39; }</code> 或者 <code>{ success: false, message: &#39;亲爱的,暂无版权&#39; }</code></p>
+
+<p><strong>必选参数 :</strong> <code>id</code> : 歌曲 id</p>
+
+<p><strong>可选参数</strong> : <code>br</code>: 码率,默认设置了 999000 即最大码率,如果要 320k 则可设置为 320000,其他类推</p>
+
+<p><strong>接口地址 :</strong> <code>/check/music</code></p>
+
+<p><strong>调用例子 :</strong> <code>/check/music?id=33894312</code></p>
+
+<h2>搜索</h2>
+
+<p>说明 : 调用此接口 , 传入搜索关键词可以搜索该音乐 / 专辑 / 歌手 / 歌单 / 用户 ,
+关键词可以多个 , 以空格隔开 , 如 &quot; 周杰伦 搁浅 &quot;( 不需要登录 ), 搜索获取的
+mp3url 不能直接用 , 可通过 <code>/song/url</code> 接口传入歌曲 id 获取具体的播放链接</p>
+
+<p><strong>必选参数 :</strong> <code>keywords</code> : 关键词</p>
+
+<p><strong>可选参数 :</strong> <code>limit</code> : 返回数量 , 默认为 30 <code>offset</code> : 偏移数量，用于分页 , 如
+: 如 :( 页数 -1)*30, 其中 30 为 limit 的值 , 默认为 0</p>
+
+<p><code>type</code>: 搜索类型；默认为 1 即单曲 , 取值意义 : 1: 单曲, 10: 专辑, 100: 歌手, 1000:
+歌单, 1002: 用户, 1004: MV, 1006: 歌词, 1009: 电台, 1014: 视频</p>
+
+<p><strong>接口地址 :</strong> <code>/search</code></p>
+
+<p><strong>调用例子 :</strong> <code>/search?keywords= 海阔天空</code></p>
+
+<h2>热搜</h2>
+
+<p>说明 : 调用此接口,可获取热门搜索列表</p>
+
+<p><strong>接口地址 :</strong> <code>/search/hot</code></p>
+
+<p><strong>调用例子 :</strong> <code>/search/hot</code></p>
+
+<h2>搜索建议</h2>
+
+<p>说明 : 调用此接口 , 传入搜索关键词可获得搜索建议 , 搜索结果同时包含单曲 , 歌手 ,
+歌单 ,mv 信息</p>
+
+<p><strong>必选参数 :</strong> <code>keywords</code> : 关键词</p>
+
+<p><strong>可选参数 :</strong> <code>type</code> : 如果传 &#39;mobile&#39; 则返回移动端数据</p>
+
+<p><strong>接口地址 :</strong> <code>/search/suggest</code></p>
+
+<p><strong>调用例子 :</strong> <code>/search/suggest?keywords= 海阔天空</code> <code>/search/suggest?keywords= 海阔天空&amp;type=mobile</code></p>
+
+<h2>搜索多重匹配</h2>
+
+<p>说明 : 调用此接口 , 传入搜索关键词可获得搜索结果</p>
+
+<p><strong>必选参数 :</strong> <code>keywords</code> : 关键词</p>
+
+<p><strong>接口地址 :</strong> <code>/search/multimatch</code></p>
+
+<p><strong>调用例子 :</strong> <code>/search/multimatch?keywords= 海阔天空</code></p>
+
+<h2>新建歌单</h2>
+
+<p>说明 : 调用此接口 , 传入歌单名字可新建歌单</p>
+
+<p><strong>必选参数 :</strong> <code>name</code> : 歌单名</p>
+
+<p><strong>可选参数 :</strong> <code>privacy</code> : 是否设置为隐私歌单，默认否，传&#39;10&#39;则设置成隐私歌单</p>
+
+<p><strong>接口地址 :</strong> <code>/playlist/create</code></p>
+
+<p><strong>调用例子 :</strong> <code>/playlist/create?name=测试歌单</code></p>
+
+<h2>收藏/取消收藏歌单</h2>
+
+<p>说明 : 调用此接口 , 传入类型和歌单 id 可收藏歌单或者取消收藏歌单</p>
+
+<p><strong>必选参数 :</strong></p>
+
+<p><code>t</code> : 类型,1:收藏,2:取消收藏
+<code>id</code> : 歌单 id</p>
+
+<p><strong>接口地址 :</strong> <code>/playlist/subscribe</code></p>
+
+<p><strong>调用例子 :</strong> <code>/playlist/subscribe?t=1&amp;id=106697785</code> <code>/playlist/subscribe?t=2&amp;id=106697785</code></p>
+
+<h2>歌单收藏者</h2>
+
+<p>说明 : 调用此接口 , 传入歌单 id 可获取歌单的所有收藏者<br/><strong>必选参数 :</strong></p>
+
+<p><code>id</code> : 歌单 id</p>
+
+<p><strong>可选参数 :</strong> <code>limit</code>: 取出评论数量 , 默认为 20</p>
+
+<p><code>offset</code>: 偏移数量 , 用于分页 , 如 :( 评论页数 -1)*20, 其中 20 为 limit 的值</p>
+
+<p><strong>接口地址 :</strong> <code>/playlist/subscribers</code></p>
+
+<p><strong>调用例子 :</strong> <code>/playlist/subscribers?id=544215255&amp;limit=30</code></p>
+
+<h2>对歌单添加或删除歌曲</h2>
+
+<p>说明 : 调用此接口 , 可以添加歌曲到歌单或者从歌单删除某首歌曲 ( 需要登录 )</p>
+
+<p><strong>必选参数 :</strong></p>
+
+<p><code>op</code>: 从歌单增加单曲为 add, 删除为 del</p>
+
+<p><code>pid</code>: 歌单 id
+<code>tracks</code>: 歌曲 id,可多个,用逗号隔开</p>
+
+<p><strong>接口地址 :</strong> <code>/playlist/tracks</code></p>
+
+<p><strong>调用例子 :</strong> <code>/playlist/tracks?op=add&amp;pid=24381616&amp;tracks=347231</code> ( 对应把歌曲添加到 &#39; 我 &#39; 的歌单 , 测试的时候请把这里的 pid 换成你自己的, id 和 tracks 不对可能会报 502 错误)</p>
+
+<h2>获取歌词</h2>
+
+<p>说明 : 调用此接口 , 传入音乐 id 可获得对应音乐的歌词 ( 不需要登录 )</p>
+
+<p><strong>必选参数 :</strong> <code>id</code>: 音乐 id</p>
+
+<p><strong>接口地址 :</strong> <code>/lyric</code></p>
+
+<p><strong>调用例子 :</strong> <code>/lyric?id=33894312</code></p>
+
+<h2>新歌速递</h2>
+
+<p>说明 : 调用此接口 , 可获取新歌速递</p>
+
+<p><strong>必选参数 :</strong></p>
+
+<p><code>type</code>: 地区类型 id,对应以下:</p>
+
+<p><code></code>`
+全部:0</p>
+
+<p>华语:7</p>
+
+<p>欧美:96</p>
+
+<p>日本:8</p>
+
+<p>韩国:16
+<code></code>`</p>
+
+<p><strong>接口地址 :</strong> <code>/top/song</code></p>
+
+<p><strong>调用例子 :</strong> <code>/top/song?type=96</code></p>
+
+<h2>歌曲评论</h2>
+
+<p>说明 : 调用此接口 , 传入音乐 id 和 limit 参数 , 可获得该音乐的所有评论 ( 不需要
+登录 )</p>
+
+<p><strong>必选参数 :</strong> <code>id</code>: 音乐 id</p>
+
+<p><strong>可选参数 :</strong> <code>limit</code>: 取出评论数量 , 默认为 20</p>
+
+<p><code>offset</code>: 偏移数量 , 用于分页 , 如 :( 评论页数 -1)*20, 其中 20 为 limit 的值</p>
+
+<p><strong>接口地址 :</strong> <code>/comment/music</code></p>
+
+<p><strong>调用例子 :</strong> <code>/comment/music?id=186016&amp;limit=1</code> 对应晴天评论</p>
+
+<h2>专辑评论</h2>
+
+<p>说明 : 调用此接口 , 传入音乐 id 和 limit 参数 , 可获得该专辑的所有评论 ( 不需要
+登录 )</p>
+
+<p><strong>必选参数 :</strong> <code>id</code>: 专辑 id</p>
+
+<p><strong>可选参数 :</strong> <code>limit</code>: 取出评论数量 , 默认为 20</p>
+
+<p><code>offset</code>: 偏移数量 , 用于分页 , 如 :( 评论页数 -1)*20, 其中 20 为 limit 的值</p>
+
+<p><strong>接口地址 :</strong> <code>/comment/album</code></p>
+
+<p><strong>调用例子 :</strong> <code>/comment/album?id=32311</code></p>
+
+<h2>歌单评论</h2>
+
+<p>说明 : 调用此接口 , 传入音乐 id 和 limit 参数 , 可获得该歌单的所有评论 ( 不需要
+登录 )</p>
+
+<p><strong>必选参数 :</strong> <code>id</code>: 歌单 id</p>
+
+<p><strong>可选参数 :</strong> <code>limit</code>: 取出评论数量 , 默认为 20</p>
+
+<p><code>offset</code>: 偏移数量 , 用于分页 , 如 :( 评论页数 -1)*20, 其中 20 为 limit 的值</p>
+
+<p><strong>接口地址 :</strong> <code>/comment/playlist</code></p>
+
+<p><strong>调用例子 :</strong> <code>/comment/playlist?id=705123491</code></p>
+
+<h2>mv 评论</h2>
+
+<p>说明 : 调用此接口 , 传入音乐 id 和 limit 参数 , 可获得该 mv 的所有评论 ( 不需要
+登录 )</p>
+
+<p><strong>必选参数 :</strong> <code>id</code>: mv id</p>
+
+<p><strong>可选参数 :</strong> <code>limit</code>: 取出评论数量 , 默认为 20</p>
+
+<p><code>offset</code>: 偏移数量 , 用于分页 , 如 :( 评论页数 -1)*20, 其中 20 为 limit 的值</p>
+
+<p><strong>接口地址 :</strong> <code>/comment/mv</code></p>
+
+<p><strong>调用例子 :</strong> <code>/comment/mv?id=5436712</code></p>
+
+<h2>电台节目评论</h2>
+
+<p>说明 : 调用此接口 , 传入音乐 id 和 limit 参数 , 可获得该 电台节目 的所有评论 (
+不需要登录 )</p>
+
+<p><strong>必选参数 :</strong> <code>id</code>: 电台节目的 id</p>
+
+<p><strong>可选参数 :</strong> <code>limit</code>: 取出评论数量 , 默认为 20</p>
+
+<p><code>offset</code>: 偏移数量 , 用于分页 , 如 :( 评论页数 -1)*20, 其中 20 为 limit 的值</p>
+
+<p><strong>接口地址 :</strong> <code>/comment/dj</code></p>
+
+<p><strong>调用例子 :</strong> <code>/comment/dj?id=794062371</code></p>
+
+<h2>视频评论</h2>
+
+<p>说明 : 调用此接口 , 传入音乐 id 和 limit 参数 , 可获得该 视频 的所有评论 (
+不需要登录 )</p>
+
+<p><strong>必选参数 :</strong> <code>id</code>: 视频的 id</p>
+
+<p><strong>可选参数 :</strong> <code>limit</code>: 取出评论数量 , 默认为 20</p>
+
+<p><code>offset</code>: 偏移数量 , 用于分页 , 如 :( 评论页数 -1)*20, 其中 20 为 limit 的值</p>
+
+<p><strong>接口地址 :</strong> <code>/comment/video</code></p>
+
+<p><strong>调用例子 :</strong> <code>/comment/video?id=89ADDE33C0AAE8EC14B99F6750DB954D</code></p>
+
+<h2>热门评论</h2>
+
+<p>说明 : 调用此接口 , 传入 type, 资源 id 可获得对应资源热门评论 ( 不需要登录 )</p>
+
+<p><strong>必选参数 :</strong></p>
+
+<p><code>id</code> : 资源 id</p>
+
+<p><code>tpye</code>: 数字 , 资源类型 , 对应歌曲 , mv, 专辑 , 歌单 , 电台, 视频对应以下类型</p>
+
+<p><code></code>`
+0: 歌曲</p>
+
+<p>1: mv</p>
+
+<p>2: 歌单</p>
+
+<p>3: 专辑</p>
+
+<p>4: 电台</p>
+
+<p>5: 视频
+<code></code>`</p>
+
+<p><strong>接口地址 :</strong> <code>/comment/hot</code></p>
+
+<p><strong>调用例子 :</strong> <code>/comment/hot?id=186016&amp;type=0</code></p>
+
+<h2>给评论点赞</h2>
+
+<p>说明 : 调用此接口 , 传入 type, 资源 id, 和评论 id cid 和 是否点赞参数 t 即可给对
+应评论点赞 ( 需要登录 )</p>
+
+<p><strong>必选参数 :</strong> <code>id</code> : 资源 id, 如歌曲 id,mv id</p>
+
+<p><code>cid</code> : 评论 id</p>
+
+<p><code>t</code> : 是否点赞 ,1 为点赞 ,0 为取消点赞</p>
+
+<p><code>tpye</code>: 数字 , 资源类型 , 对应歌曲 , mv, 专辑 , 歌单 , 电台, 视频对应以下类型</p>
+
+<p><code></code>`
+0: 歌曲</p>
+
+<p>1: mv</p>
+
+<p>2: 歌单</p>
+
+<p>3: 专辑</p>
+
+<p>4: 电台</p>
+
+<p>5: 视频</p>
+
+<p>6: 动态
+<code></code>`</p>
+
+<p><strong>接口地址 :</strong> <code>comment/like</code></p>
+
+<p><strong>调用例子 :</strong> <code>/comment/like?id=29178366&amp;cid=12840183&amp;t=1&amp;type=0</code> 对应给 <a href="https://music.163.com/#/song?id=29178366">https://music.163.com/#/song?id=29178366</a> 最热门的评论点赞</p>
+
+<p>注意： 动态点赞不需要传入 id 参数，需要传入动态的 <code>threadId</code>  参数,如：<code>/comment/like?type=6&amp;cid=1419532712&amp;threadId=A_EV_2_6559519868_32953014&amp;t=0</code>， <code>threadId</code> 可通过 <code>/event</code>，<code>/user/event</code> 接口获取</p>
+
+<h2>发送/删除评论</h2>
+
+<p>说明 : 调用此接口,可发送评论或者删除评论</p>
+
+<p><strong>接口地址 :</strong> <code>/comment</code></p>
+
+<ol><li><p>发送评论</p><p><strong>必选参数</strong></p><p><code>t</code>:1 发送</p><p><code>tpye</code>: 数字,资源类型,对应歌曲,mv,专辑,歌单,电台,视频对应以下类型</p><p><code></code>`
+0: 歌曲</p><p>1: mv</p><p>2: 歌单</p><p>3: 专辑</p><p>4: 电台</p><p>5: 视频</p><p>6: 动态
+<code></code>`</p><p><code>id</code>:对应资源 id</p><p><code>content</code> :要发送的内容</p><p><strong>调用例子</strong> : <code>/comment?t=1&amp;type=1&amp;id=5436712&amp;content=test</code> (往广岛之恋 mv 发送评论: test)</p><p>注意：如给动态发送评论，则不需要传 id，需要传动态的 <code>threadId</code>,如：<code>/comment?t=1&amp;type=6&amp;threadId=A_EV_2_6559519868_32953014&amp;content=test</code></p></li><li><p>删除评论</p><p><strong>必选参数</strong></p><p><code>t</code>:0 删除</p><p><code>tpye</code>: 数字,资源类型,对应歌曲,mv,专辑,歌单,电台,视频对应以下类型  </p><p><code></code>`
+0: 歌曲</p><p>1: mv</p><p>2: 歌单</p><p>3: 专辑</p><p>4: 电台</p><p>5: 视频</p><p>6: 动态</p><p><code></code>`</p><p><code>id</code>:对应资源 id
+<code>content</code> :内容 id,可通过 <code>/comment/mv</code> 等接口获取</p><p><strong>调用例子</strong> : <code>/comment?t=0&amp;type=1&amp;id=5436712&amp;commentId=1535550516319</code> (在广岛之恋 mv 删除评论)</p><p>注意：如给动态删除评论，则不需要传 id，需要传动态的 <code>threadId</code>,如：<code>/comment?t=0&amp;type=6&amp;threadId=A_EV_2_6559519868_32953014&amp;commentId=1419516382</code></p></li></ol>
+
+<h2>banner</h2>
+
+<p>说明 : 调用此接口 , 可获取 banner( 轮播图 ) 数据</p>
+
+<p><strong>可选参数 :</strong></p>
+
+<p><code>type</code>:资源类型,对应以下类型,默认为 0 即PC</p>
+
+<p><code></code>`
+0: pc</p>
+
+<p>1: android</p>
+
+<p>2: iphone</p>
+
+<p>3: ipad
+<code></code>`</p>
+
+<p><strong>接口地址 :</strong> <code>/banner</code></p>
+
+<p><strong>调用例子 :</strong> <code>/banner</code>, <code>/banner?type=2</code></p>
+
+<h2>资源点赞( MV,电台,视频)</h2>
+
+<p>说明 : 调用此接口 , 可对 MV,电台,视频点赞</p>
+
+<p><strong>必选参数 :</strong></p>
+
+<p><code>type</code>:资源类型,对应以下类型</p>
+
+<p><code></code>`
+1: mv</p>
+
+<p>4: 电台</p>
+
+<p>5: 视频</p>
+
+<p>6: 动态
+<code></code>`</p>
+
+<p><code>t</code>: 操作,1 为点赞,其他未取消点赞</p>
+
+<p><code>id</code>: 资源 id</p>
+
+<p><strong>接口地址 :</strong> <code>/resource/like</code></p>
+
+<p><strong>调用例子 :</strong> <code>/resource/like?t=1&amp;type=1&amp;id=5436712</code></p>
+
+<p>注意：如给动态点赞，不需要传入 id，需要传入 <code>threadId</code>,可通过 <code>event</code>,<code>/user/event</code> 接口获取，如：
+<code>/resource/like?t=1&amp;type=6&amp;threadId=A_EV_2_6559519868_32953014</code></p>
+
+<h2>获取歌曲详情</h2>
+
+<p>说明 : 调用此接口 , 传入音乐 id(支持多个 id, 用 <code>,</code> 隔开), 可获得歌曲详情(注意:歌曲封面现在需要通过专辑内容接口获取)</p>
+
+<p><strong>必选参数 :</strong> <code>ids</code>: 音乐 id, 如 <code>ids=347230</code></p>
+
+<p><strong>接口地址 :</strong> <code>/song/detail</code></p>
+
+<p><strong>调用例子 :</strong> <code>/song/detail?ids=347230</code>,<code>/song/detail?ids=347230,347231</code></p>
+
+<h2>获取专辑内容</h2>
+
+<p>说明 : 调用此接口 , 传入专辑 id, 可获得专辑内容</p>
+
+<p><strong>必选参数 :</strong> <code>id</code>: 专辑 id</p>
+
+<p><strong>接口地址 :</strong> <code>/album</code></p>
+
+<p><strong>调用例子 :</strong> <code>/album?id=32311</code></p>
+
+<h2>获取已收藏专辑列表</h2>
+
+<p>说明 : 调用此接口 , 可获得已收藏专辑列表</p>
+
+<p><strong>可选参数 :</strong><br/><code>limit</code>: 取出数量 , 默认为 25</p>
+
+<p><code>offset</code>: 偏移数量 , 用于分页 , 如 :( 页数 -1)*25, 其中 25 为 limit 的值 , 默认
+为 0</p>
+
+<p><strong>接口地址 :</strong> <code>/album/sublist</code></p>
+
+<p><strong>调用例子 :</strong> <code>/album/sublist</code> ( 周杰伦 )</p>
+
+<h2>获取歌手单曲</h2>
+
+<p>说明 : 调用此接口 , 传入歌手 id, 可获得歌手部分信息和热门歌曲</p>
+
+<p><strong>必选参数 :</strong> <code>id</code>: 歌手 id, 可由搜索接口获得</p>
+
+<p><strong>接口地址 :</strong> <code>/artists</code></p>
+
+<p><strong>调用例子 :</strong> <code>/artists?id=6452</code></p>
+
+<h2>获取歌手 mv</h2>
+
+<p>说明 : 调用此接口 , 传入歌手 id, 可获得歌手 mv 信息 , 具体 mv 播放地址可调
+用<code>/mv</code>传入此接口获得的 mvid 来拿到 , 如 :
+<code>/artist/mv?id=6452</code>,<code>/mv?mvid=5461064</code></p>
+
+<p><strong>必选参数 :</strong> <code>id</code>: 歌手 id, 可由搜索接口获得</p>
+
+<p><strong>接口地址 :</strong> <code>/artist/mv</code></p>
+
+<p><strong>调用例子 :</strong> <code>/artist/mv?id=6452</code></p>
+
+<h2>获取歌手专辑</h2>
+
+<p>说明 : 调用此接口 , 传入歌手 id, 可获得歌手专辑内容</p>
+
+<p><strong>必选参数 :</strong> <code>id</code>: 歌手 id</p>
+
+<p><strong>可选参数 :</strong> <code>limit</code>: 取出数量 , 默认为 50</p>
+
+<p><code>offset</code>: 偏移数量 , 用于分页 , 如 :( 页数 -1)*50, 其中 50 为 limit 的值 , 默认
+为 0</p>
+
+<p><strong>接口地址 :</strong> <code>/artist/album</code></p>
+
+<p><strong>调用例子 :</strong> <code>/artist/album?id=6452&amp;limit=30</code> ( 周杰伦 )</p>
+
+<h2>获取歌手描述</h2>
+
+<p>说明 : 调用此接口 , 传入歌手 id, 可获得歌手描述</p>
+
+<p><strong>必选参数 :</strong> <code>id</code>: 歌手 id</p>
+
+<p><strong>接口地址 :</strong> <code>/artist/desc</code></p>
+
+<p><strong>调用例子 :</strong> <code>/artist/desc?id=6452</code> ( 周杰伦 )</p>
+
+<h2>获取相似歌手</h2>
+
+<p>说明 : 调用此接口 , 传入歌手 id, 可获得相似歌手</p>
+
+<p><strong>必选参数 :</strong> <code>id</code>: 歌手 id</p>
+
+<p><strong>接口地址 :</strong> <code>/simi/artist</code></p>
+
+<p><strong>调用例子 :</strong> <code>/simi/artist?id=6452</code> ( 对应和周杰伦相似歌手 )</p>
+
+<h2>获取相似歌单</h2>
+
+<p>说明 : 调用此接口 , 传入歌曲 id, 可获得相似歌单</p>
+
+<p><strong>必选参数 :</strong> <code>id</code>: 歌曲 id</p>
+
+<p><strong>接口地址 :</strong> <code>/simi/playlist</code></p>
+
+<p><strong>调用例子 :</strong> <code>/simi/playlist?id=347230</code> ( 对应 &#39; 光辉岁月 &#39; 相似歌单 )</p>
+
+<h2>相似 mv</h2>
+
+<p>说明 : 调用此接口 , 传入 <code>mvid</code> 可获取相似 mv</p>
+
+<p><strong>必选参数 :</strong> <code>mvid</code>: mv id</p>
+
+<p><strong>接口地址 :</strong> <code>/simi/mv</code></p>
+
+<p><strong>调用例子 :</strong> <code>/simi/mv?mvid=5436712</code></p>
+
+<h2>获取相似音乐</h2>
+
+<p>说明 : 调用此接口 , 传入歌曲 id, 可获得相似歌曲</p>
+
+<p><strong>必选参数 :</strong> <code>id</code>: 歌曲 id</p>
+
+<p><strong>接口地址 :</strong> <code>/simi/song</code></p>
+
+<p><strong>调用例子 :</strong> <code>/simi/song?id=347230</code> ( 对应 &#39; 光辉岁月 &#39; 相似歌曲 )</p>
+
+<h2>获取最近 5 个听了这首歌的用户</h2>
+
+<p>说明 : 调用此接口 , 传入歌曲 id, 最近 5 个听了这首歌的用户</p>
+
+<p><strong>必选参数 :</strong> <code>id</code>: 歌曲 id</p>
+
+<p><strong>接口地址 :</strong> <code>/simi/user</code></p>
+
+<p><strong>调用例子 :</strong> <code>/simi/user?id=347230</code> ( 对应 &#39; 光辉岁月 &#39; 相似歌曲 )</p>
+
+<h2>获取每日推荐歌单</h2>
+
+<p>说明 : 调用此接口 , 可获得每日推荐歌单 ( 需要登录 )</p>
+
+<p><strong>接口地址 :</strong> <code>/recommend/resource</code></p>
+
+<p><strong>调用例子 :</strong> <code>/recommend/resource</code></p>
+
+<h2>获取每日推荐歌曲</h2>
+
+<p>说明 : 调用此接口 , 可获得每日推荐歌曲 ( 需要登录 )</p>
+
+<p><strong>接口地址 :</strong> <code>/recommend/songs</code></p>
+
+<p><strong>调用例子 :</strong> <code>/recommend/songs</code></p>
+
+<h2>私人 FM</h2>
+
+<p>说明 : 私人 FM( 需要登录 )</p>
+
+<p><strong>接口地址 :</strong> <code>/personal_fm</code></p>
+
+<p><strong>调用例子 :</strong> <code>/personal_fm</code></p>
+
+<h2>签到</h2>
+
+<p>说明 : 调用此接口 , 传入签到类型 ( 可不传 , 默认安卓端签到 ), 可签到 ( 需要登录
+), 其中安卓端签到可获得 3 点经验 , web/PC 端签到可获得 2 点经验</p>
+
+<p><strong>可选参数 :</strong> <code>type</code>: 签到类型 , 默认 0, 其中 0 为安卓端签到 ,1 为 web/PC 签到</p>
+
+<p><strong>接口地址 :</strong> <code>/daily_signin</code></p>
+
+<p><strong>调用例子 :</strong> <code>/daily_signin</code></p>
+
+<h2>喜欢音乐</h2>
+
+<p>说明 : 调用此接口 , 传入音乐 id, 可喜欢该音乐</p>
+
+<p><strong>必选参数 :</strong> <code>id</code>: 歌曲 id</p>
+
+<p><strong>可选参数 :</strong> <code>like</code>: 布尔值 , 默认为 true 即喜欢 , 若传 false, 则取消喜欢</p>
+
+<p><strong>接口地址 :</strong> <code>/like</code></p>
+
+<p><strong>调用例子 :</strong> <code>/like?id=347230</code></p>
+
+<p>喜欢成功则返回数据的 code 为 200, 其余为失败</p>
+
+<h2>喜欢音乐列表</h2>
+
+<p>说明 : 调用此接口 , 传入用户 id, 可获取已喜欢音乐id列表(id数组)</p>
+
+<p><strong>必选参数 :</strong> <code>uid</code>: 用户 id</p>
+
+<p><strong>接口地址 :</strong> <code>/likelist</code></p>
+
+<p><strong>调用例子 :</strong> <code>/likelist?uid=32953014</code></p>
+
+<h2>垃圾桶</h2>
+
+<p>说明 : 调用此接口 , 传入音乐 id, 可把该音乐从私人 FM 中移除至垃圾桶</p>
+
+<p><strong>必选参数 :</strong> <code>id</code>: 歌曲 id</p>
+
+<p><strong>接口地址 :</strong> <code>/fm_trash</code></p>
+
+<p><strong>调用例子 :</strong> <code>/fm_trash?id=347230</code></p>
+
+<h2>新碟上架</h2>
+
+<p>说明 : 调用此接口 , 可获取新碟上架列表 , 如需具体音乐信息需要调用获取专辑列表接
+口 <code>/album</code> , 然后传入 id, 如 <code>/album?id=32311&amp;limit=30</code></p>
+
+<p><strong>可选参数 :</strong> <code>limit</code>: 取出数量 , 默认为 50</p>
+
+<p><code>offset</code>: 偏移数量 , 用于分页 , 如 :( 页数 -1)*50, 其中 50 为 limit 的值 , 默认
+为 0</p>
+
+<p><strong>接口地址 :</strong> <code>/top/album</code></p>
+
+<p><strong>调用例子 :</strong> <code>/top/album?offset=0&amp;limit=30</code></p>
+
+<h2>最新专辑</h2>
+
+<p>说明 : 调用此接口 ，获取云音乐首页新碟上架数据</p>
+
+<p><strong>接口地址 :</strong> <code>/album/newest</code></p>
+
+<p><strong>调用例子 :</strong> <code>/likelist?uid=32953014</code></p>
+
+<h2>听歌打卡</h2>
+
+<p>说明 : 调用此接口 , 传入音乐 id, 来源 id，歌曲时间 time，更新听歌排行数据</p>
+
+<p><strong>必选参数 :</strong> <code>id</code>: 歌曲 id, <code>sourceid</code>: 歌单或专辑 id</p>
+
+<p><strong>可选参数 :</strong> <code>time</code>: 歌曲播放时间</p>
+
+<p><strong>接口地址 :</strong> <code>/scrobble</code></p>
+
+<p><strong>调用例子 :</strong> <code>/scrobble?id=482369360&amp;&amp;sourceid=35571977</code></p>
+
+<h2>热门歌手</h2>
+
+<p>说明 : 调用此接口 , 可获取热门歌手数据</p>
+
+<p><strong>可选参数 :</strong> <code>limit</code>: 取出数量 , 默认为 50</p>
+
+<p><code>offset</code>: 偏移数量 , 用于分页 , 如 :( 页数 -1)*50, 其中 50 为 limit 的值 , 默认
+为 0</p>
+
+<p><strong>接口地址 :</strong> <code>/top/artists</code></p>
+
+<p><strong>调用例子 :</strong> <code>/top/artists?offset=0&amp;limit=30</code></p>
+
+<h2>最新 mv</h2>
+
+<p>说明 : 调用此接口 , 可获取最新 mv</p>
+
+<p><strong>可选参数 :</strong> <code>limit</code>: 取出数量 , 默认为 30</p>
+
+<p><strong>接口地址 :</strong> <code>/mv/first</code></p>
+
+<p><strong>调用例子 :</strong> <code>/mv/first?limit=10</code></p>
+
+<h2>推荐 mv</h2>
+
+<p>说明 : 调用此接口 , 可获取推荐 mv</p>
+
+<p><strong>接口地址 :</strong> <code>/personalized/mv</code></p>
+
+<p><strong>调用例子 :</strong> <code>/personalized/mv</code></p>
+
+<h2>推荐歌单</h2>
+
+<p>说明 : 调用此接口 , 可获取推荐歌单</p>
+
+<p><strong>接口地址 :</strong> <code>/personalized</code></p>
+
+<p><strong>调用例子 :</strong> <code>/personalized</code></p>
+
+<h2>推荐新音乐</h2>
+
+<p>说明 : 调用此接口 , 可获取推荐新音乐</p>
+
+<p><strong>接口地址 :</strong> <code>/personalized/newsong</code></p>
+
+<p><strong>调用例子 :</strong> <code>/personalized/newsong</code></p>
+
+<h2>推荐电台</h2>
+
+<p>说明 : 调用此接口 , 可获取推荐电台</p>
+
+<p><strong>接口地址 :</strong> <code>/personalized/djprogram</code></p>
+
+<p><strong>调用例子 :</strong> <code>/personalized/djprogram</code></p>
+
+<h2>推荐节目</h2>
+
+<p>说明 : 调用此接口 , 可获取推荐电台</p>
+
+<p><strong>接口地址 :</strong> <code>/program/recommend</code></p>
+
+<p><strong>调用例子 :</strong> <code>/program/recommend</code></p>
+
+<h2>独家放送</h2>
+
+<p>说明 : 调用此接口 , 可获取独家放送</p>
+
+<p><strong>接口地址 :</strong> <code>/personalized/privatecontent</code></p>
+
+<p><strong>调用例子 :</strong> <code>/personalized/privatecontent</code></p>
+
+<h2>mv 排行</h2>
+
+<p>说明 : 调用此接口 , 可获取 mv 排行</p>
+
+<p><strong>可选参数 :</strong> <code>limit</code>: 取出数量 , 默认为 30</p>
+
+<p><code>offset</code>: 偏移数量 , 用于分页 , 如 :( 页数 -1)*30, 其中 30 为 limit 的值 , 默认
+为 0</p>
+
+<p><strong>接口地址 :</strong> <code>top/mv</code></p>
+
+<p><strong>调用例子 :</strong> <code>top/mv?limit=10</code></p>
+
+<h2>获取 mv 数据</h2>
+
+<p>说明 : 调用此接口 , 传入 mvid ( 在搜索音乐的时候传 type=1004 获得 ) , 可获取对应
+MV 数据 , 数据包含 mv 名字 , 歌手 , 发布时间 , mv 视频地址等数据 , 其中 mv 视频
+网易做了防盗链处理 , 可能不能直接播放 , 需要播放的话需要调用 &#39; mv 地址&#39; 接口</p>
+
+<p><strong>必选参数 :</strong> <code>mvid</code>: mv 的 id</p>
+
+<p><strong>接口地址 :</strong> <code>/mv/detail</code></p>
+
+<p><strong>调用例子 :</strong> <code>/mv/detail?mvid=5436712</code></p>
+
+<h2>mv 地址</h2>
+
+<p>说明 : 调用此接口 , 传入 mv id,可获取 mv 播放地址</p>
+
+<p><strong>可选参数 :</strong> <code>url</code>: mv id</p>
+
+<p><strong>接口地址 :</strong> <code>/mv/url</code></p>
+
+<p><strong>调用例子 :</strong></p>
+
+<p><code>/mv/url?id=5436712</code></p>
+
+<h2>相关视频</h2>
+
+<p>说明 : 调用此接口 , 可获取相关视频</p>
+
+<p><strong>必选参数 :</strong> <code>id</code>: 视频 的 id</p>
+
+<p><strong>接口地址 :</strong> <code>/related/allvideo</code></p>
+
+<p><strong>调用例子 :</strong> <code>/related/allvideo?id=89ADDE33C0AAE8EC14B99F6750DB954D</code></p>
+
+<h2>视频详情</h2>
+
+<p>说明 : 调用此接口 , 可获取相关视频</p>
+
+<p><strong>必选参数 :</strong> <code>id</code>: 视频 的 id</p>
+
+<p><strong>接口地址 :</strong> <code>/video/detail</code></p>
+
+<p><strong>调用例子 :</strong> <code>/video/detail?id=89ADDE33C0AAE8EC14B99F6750DB954D</code></p>
+
+<h2>获取视频数据</h2>
+
+<p>说明 : 调用此接口 , 传入视频 id,可获取视频播放地址</p>
+
+<p><strong>必选参数 :</strong> <code>id</code>: 视频 的 id</p>
+
+<p><strong>接口地址 :</strong> <code>/video/url</code></p>
+
+<p><strong>调用例子 :</strong> <code>/video/url?id=89ADDE33C0AAE8EC14B99F6750DB954D</code></p>
+
+<h2>获取视频标签下的视频</h2>
+
+<p>说明 : 调用此接口 , 传入<code>videoGroupId</code>,可获取到相关的视频。  </p>
+
+<p><strong>必选参数 :</strong> <code>传入videoGroupId</code>: videoGroup 的 id</p>
+
+<p><strong>接口地址 :</strong> <code>/video/group</code></p>
+
+<p><strong>调用例子 :</strong> <code>/video/group?id=9104</code></p>
+
+<h2>排行榜</h2>
+
+<p>说明 : 调用此接口 , 传入数字 idx, 可获取不同排行榜</p>
+
+<p><strong>必选参数 :</strong> <code>idx</code>: 对象 key, 对应以下排行榜</p>
+
+<p><code></code>`
+&quot;0&quot;: 云音乐新歌榜,</p>
+
+<p>&quot;1&quot;: 云音乐热歌榜,</p>
+
+<p>&quot;2&quot;: 网易原创歌曲榜,</p>
+
+<p>&quot;3&quot;: 云音乐飙升榜,</p>
+
+<p>&quot;4&quot;: 云音乐电音榜,</p>
+
+<p>&quot;5&quot;: UK排行榜周榜,</p>
+
+<p>&quot;6&quot;: 美国Billboard周榜</p>
+
+<p>&quot;7&quot;: KTV嗨榜,</p>
+
+<p>&quot;8&quot;: iTunes榜,</p>
+
+<p>&quot;9&quot;: Hit FM Top榜,</p>
+
+<p>&quot;10&quot;: 日本Oricon周榜</p>
+
+<p>&quot;11&quot;: 韩国Melon排行榜周榜,</p>
+
+<p>&quot;12&quot;: 韩国Mnet排行榜周榜,</p>
+
+<p>&quot;13&quot;: 韩国Melon原声周榜,</p>
+
+<p>&quot;14&quot;: 中国TOP排行榜(港台榜),</p>
+
+<p>&quot;15&quot;: 中国TOP排行榜(内地榜)</p>
+
+<p>&quot;16&quot;: 香港电台中文歌曲龙虎榜,</p>
+
+<p>&quot;17&quot;: 华语金曲榜,</p>
+
+<p>&quot;18&quot;: 中国嘻哈榜,</p>
+
+<p>&quot;19&quot;: 法国 NRJ EuroHot 30周榜,</p>
+
+<p>&quot;20&quot;: 台湾Hito排行榜,</p>
+
+<p>&quot;21&quot;: Beatport全球电子舞曲榜,</p>
+
+<p>&quot;22&quot;: 云音乐ACG音乐榜,</p>
+
+<p>&quot;23&quot;: 云音乐嘻哈榜
+<code></code>`</p>
+
+<p><strong>接口地址 :</strong> <code>/top/list</code></p>
+
+<p><strong>调用例子 :</strong> <code>/top/list?idx=6</code></p>
+
+<h2>所有榜单</h2>
+
+<p>说明 : 调用此接口,可获取所有榜单
+<strong>接口地址 :</strong> <code>/toplist</code></p>
+
+<p><strong>调用例子 :</strong> <code>/toplist</code></p>
+
+<h2>所有榜单内容摘要</h2>
+
+<p>说明 : 调用此接口,可获取所有榜单内容摘要
+<strong>接口地址 :</strong> <code>/toplist/detail</code></p>
+
+<p><strong>调用例子 :</strong> <code>/toplist/detail</code></p>
+
+<h2>歌手榜</h2>
+
+<p>说明 : 调用此接口 , 可获取排行榜中的歌手榜</p>
+
+<p><strong>接口地址 :</strong> <code>/toplist/artist</code></p>
+
+<p><strong>调用例子 :</strong> <code>/toplist/artist</code></p>
+
+<h2>云盘</h2>
+
+<p>说明 : 登陆后调用此接口 , 可获取云盘数据 , 获取的数据没有对应 url, 需要再调用一
+次 <code>/song/url</code> 获取 url</p>
+
+<p><strong>接口地址 :</strong> <code>/user/cloud</code></p>
+
+<p><strong>调用例子 :</strong> <code>/user/cloud</code></p>
+
+<h2>云盘数据详情</h2>
+
+<p>说明 : 登陆后调用此接口 , 传入云盘歌曲 id，可获取云盘数据详情</p>
+
+<p><strong>必选参数 :</strong> <code>id</code>: 歌曲id,可多个,用逗号隔开</p>
+
+<p><strong>接口地址 :</strong> <code>/user/cloud/detail</code></p>
+
+<p><strong>调用例子 :</strong> <code>/user/cloud/detail?id=5374627</code></p>
+
+<h2>云盘歌曲删除</h2>
+
+<p>说明 : 登陆后调用此接口 , 可删除云盘歌曲</p>
+
+<p><strong>必选参数 :</strong> <code>id</code>: 歌曲id,可多个,用逗号隔开</p>
+
+<p><strong>接口地址 :</strong> <code>/user/cloud/del</code></p>
+
+<p><strong>调用例子 :</strong> <code>/user/cloud/del</code></p>
+
+<h2>电台 - 推荐</h2>
+
+<p>说明 : 登陆后调用此接口 , 可获得推荐电台</p>
+
+<p><strong>接口地址 :</strong> <code>/dj/recommend</code></p>
+
+<p><strong>调用例子 :</strong> <code>/dj/recommend</code></p>
+
+<h2>电台 - 分类</h2>
+
+<p>说明 : 登陆后调用此接口 , 可获得电台类型</p>
+
+<p><strong>接口地址 :</strong> <code>/dj/catelist</code></p>
+
+<p><strong>调用例子 :</strong> <code>/dj/catelist</code></p>
+
+<h2>电台 - 分类推荐</h2>
+
+<p>说明 : 登陆后调用此接口 , 可获得推荐电台</p>
+
+<p><strong>必选参数 :</strong> <code>type</code>: 电台类型 , 数字 , 可通过<code>/dj/catelist</code>获取 , 对应关系为
+id 对应 此接口的 type, name 对应类型意义</p>
+
+<p><strong>接口地址 :</strong> <code>/dj/recommend/type</code></p>
+
+<p><strong>调用例子 :</strong> <code>/dj/recommend/type?type=1</code></p>
+
+<h2>电台 - 订阅</h2>
+
+<p>说明 : 登陆后调用此接口 , 传入<code>rid</code>, 可订阅 dj,dj 的 <code>rid</code> 可通过搜索指定
+type=&#39;1009&#39; 获取其 id, 如<code>/search?keywords= 代码时间 &amp;type=1009</code></p>
+
+<p><strong>必选参数 :</strong> <code>rid</code>: 电台 的 id</p>
+
+<p><strong>接口地址 :</strong> <code>/dj/sub</code></p>
+
+<p><strong>调用例子 :</strong> <code>/dj/sub?rid=336355127&amp;t=1</code> ( 对应关注 &#39; 代码时间 &#39;)
+<code>/dj/sub?rid=336355127&amp;t=0</code> ( 对应取消关注 &#39; 代码时间 &#39;)</p>
+
+<h2>电台的订阅列表</h2>
+
+<p>说明 : 登陆后调用此接口 , 可获取订阅的电台列表</p>
+
+<p><strong>接口地址 :</strong> <code>/dj/sublist</code></p>
+
+<p><strong>调用例子 :</strong> <code>/dj/sublist</code></p>
+
+<h2>电台 - 付费精选</h2>
+
+<p>说明 : 可以获取付费精选的电台列表 , 传入 <code>limit</code> 和 <code>offset</code> 可以进行分页</p>
+
+<p><strong>可选参数 :</strong></p>
+
+<p><code>limit</code> : 返回数量 , 默认为 30</p>
+
+<p><code>offset</code> : 偏移数量，用于分页 ,  如 :( 页数 -1)*30, 其中 30 为 limit 的值 , 默认为 0</p>
+
+<p><strong>接口地址 :</strong> <code>/dj/paygift</code></p>
+
+<p><strong>调用例子 :</strong> <code>/dj/paygift?limit=10&amp;offset=20</code></p>
+
+<h2>电台 - 非热门类型</h2>
+
+<p>说明 : 登陆后调用此接口, 可获得电台非热门类型</p>
+
+<p><strong>接口地址 :</strong> <code>/dj/category/excludehot</code></p>
+
+<p><strong>调用例子 :</strong> <code>/dj/category/excludehot</code></p>
+
+<h2>电台 - 推荐类型</h2>
+
+<p>说明 : 登陆后调用此接口, 可获得电台推荐类型</p>
+
+<p><strong>接口地址 :</strong> <code>/dj/category/recommend</code></p>
+
+<p><strong>调用例子 :</strong> <code>/dj/category/recommend</code></p>
+
+<h2>电台 - 今日优选</h2>
+
+<p>说明 : 登陆后调用此接口, 可获得电台今日优选</p>
+
+<p><strong>接口地址 :</strong> <code>/dj/today/perfered</code></p>
+
+<p><strong>调用例子 :</strong> <code>/dj/today/perfered</code></p>
+
+<h2>电台 - 详情</h2>
+
+<p>说明 : 登陆后调用此接口 , 传入<code>rid</code>, 可获得对应电台的详情介绍</p>
+
+<p><strong>必选参数 :</strong> <code>rid</code>: 电台 的 id</p>
+
+<p><strong>接口地址 :</strong> <code>/dj/detail?rid=336355127</code></p>
+
+<p><strong>调用例子 :</strong> <code>/dj/detail?rid=336355127</code> ( 对应 &#39; 代码时间 &#39; 的详情介绍 )</p>
+
+<h2>电台 - 节目</h2>
+
+<p>说明 : 登陆后调用此接口 , 传入<code>rid</code>, 可查看对应电台的电台节目以及对应的 id, 需要
+注意的是这个接口返回的 mp3Url 已经无效 , 都为 null, 但是通过调用 <code>/song/url</code> 这
+个接口 , 传入节目 id 仍然能获取到节目音频 , 如 <code>/song/url?id=478446370</code> 获取代
+码时间的一个节目的音频</p>
+
+<p><strong>必选参数 :</strong> <code>rid</code>: 电台 的 id</p>
+
+<p><strong>可选参数 :</strong></p>
+
+<p><code>limit</code> : 返回数量 , 默认为 30</p>
+
+<p><code>offset</code> : 偏移数量，用于分页 , 如 :( 页数 -1)*30, 其中 30 为 limit 的值 , 默认为 0</p>
+
+<p><code>asc</code> : 排序方式,默认为 <code>false</code> (新 =&gt; 老 ) 设置 <code>true</code> 可改为 老 =&gt; 新</p>
+
+<p><strong>接口地址 :</strong> <code>/dj/program</code></p>
+
+<p><strong>调用例子 :</strong> <code>/dj/program?rid=336355127&amp;limit=40</code> ( 对应 &#39; 代码时间 &#39; 的节目列表 )</p>
+
+<h2>通知 - 私信</h2>
+
+<p>说明 : 登陆后调用此接口 ,可获取私信</p>
+
+<p><strong>可选参数 :</strong></p>
+
+<p><code>limit</code> : 返回数量 , 默认为 30</p>
+
+<p><code>offset</code> : 偏移数量，用于分页 , 如 :( 页数 -1)*30, 其中 30 为 limit 的值 , 默认为 0</p>
+
+<p><strong>接口地址 :</strong> <code>/msg/private</code></p>
+
+<p><strong>调用例子 :</strong> <code>/msg/private?limit=3</code></p>
+
+<h2>发送私信</h2>
+
+<p>说明 : 登陆后调用此接口 , 传入用户 id 和要发送的信息, 可以发送私信,返回内容为历史私信,包含带歌单的私信信息(注:不能发送私信给自己)</p>
+
+<p><strong>必选参数 :</strong></p>
+
+<p><code>user_ids</code> : 用户 id,多个需用逗号隔开</p>
+
+<p><code>msg</code> : 要发送的信息</p>
+
+<p><strong>接口地址 :</strong> <code>/send/text</code></p>
+
+<p><strong>调用例子 :</strong> <code>/send/text?user_ids=32953014&amp;msg=test</code>,<code>/send/text?user_ids=32953014,475625142&amp;msg=test</code></p>
+
+<h2>私信内容</h2>
+
+<p>说明 : 登陆后调用此接口 , 可获取私信内容</p>
+
+<p><strong>必选参数 :</strong>
+<code>uid</code> : 用户 id</p>
+
+<p><strong>可选参数 :</strong>
+<code>limit</code> : 返回数量 , 默认为 30</p>
+
+<p><code>offset</code> : 偏移数量，用于分页 , 如 :( 页数 -1)*30, 其中 30 为 limit 的值 , 默认为 0</p>
+
+<p><strong>接口地址 :</strong>
+<code>/msg/private/history</code></p>
+
+<p><strong>调用例子 :</strong>
+<code>/msg/private/history?uid=9003</code> (云音乐小秘书)</p>
+
+<h2>发送私信(带歌单)</h2>
+
+<p>说明 : 登陆后调用此接口 , 传入用户 id 和要发送的信息和歌单 id, 可以发送带歌单的私信(注:不能发送重复的歌单)</p>
+
+<p><strong>必选参数 :</strong></p>
+
+<p><code>user_ids</code> : 用户 id,多个需用逗号隔开</p>
+
+<p><code>msg</code> : 要发送的信息</p>
+
+<p><strong>接口地址 :</strong> <code>/send/playlist</code></p>
+
+<p><strong>调用例子 :</strong> <code>/send/playlist?msg=test&amp;user_ids=475625142&amp;playlist=705123491</code>,<code>/send/playlist?msg=test2&amp;user_ids=475625142,32953014&amp;playlist=705123493</code></p>
+
+<h2>通知 - 评论</h2>
+
+<p>说明 : 登陆后调用此接口 ,可获取评论</p>
+
+<p><strong>必选参数 :</strong> <code>uid</code>: 用户 的 id，只能和登录账号的 id 一致</p>
+
+<p><strong>可选参数 :</strong></p>
+
+<p><code>limit</code> : 返回数量 , 默认为 30</p>
+
+<p><code>before</code> : 分页参数,取上一页最后一个歌单的 <code>updateTime</code> 获取下一页数据</p>
+
+<p><strong>接口地址 :</strong> <code>/msg/comments</code></p>
+
+<p><strong>调用例子 :</strong> <code>/msg/comments?uid=32953014</code></p>
+
+<h2>通知 - @我</h2>
+
+<p>说明 : 登陆后调用此接口 ,可获取@我数据</p>
+
+<p><strong>可选参数 :</strong></p>
+
+<p><code>limit</code> : 返回数量 , 默认为 30</p>
+
+<p><code>offset</code> : 偏移数量，用于分页 , 如 :( 页数 -1)*30, 其中 30 为 limit 的值 , 默认为 0</p>
+
+<p><strong>接口地址 :</strong> <code>/msg/forwards</code></p>
+
+<p><strong>调用例子 :</strong> <code>/msg/forwards?limit=3</code></p>
+
+<h2>通知 - 通知</h2>
+
+<p>说明 : 登陆后调用此接口 ,可获取通知</p>
+
+<p><strong>可选参数 :</strong></p>
+
+<p><code>limit</code> : 返回数量 , 默认为 30</p>
+
+<p><code>offset</code> : 偏移数量，用于分页 , 如 :( 页数 -1)*30, 其中 30 为 limit 的值 , 默认为 0</p>
+
+<p><strong>接口地址 :</strong> <code>/msg/notices</code></p>
+
+<p><strong>调用例子 :</strong> <code>/msg/notices?limit=3</code></p>
+
+<h2>设置</h2>
+
+<p>说明 : 登陆后调用此接口 ,可获取用户设置</p>
+
+<p><strong>接口地址 :</strong> <code>/setting</code></p>
+
+<p><strong>调用例子 :</strong> <code>/setting</code></p>
+
+<h2>我的数字专辑</h2>
+
+<p>说明 : 登陆后调用此接口 ,可获取我的数字专辑</p>
+
+<p><strong>接口地址 :</strong> <code>/digitalAlbum/purchased</code></p>
+
+<p><strong>调用例子 :</strong> <code>/digitalAlbum/purchased?limit=10</code></p>
