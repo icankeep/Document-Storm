@@ -34,8 +34,9 @@ import org.apache.pdfbox.pdmodel.font.PDType0Font;
 import org.apache.pdfbox.pdmodel.font.PDType1Font;
 
 /**
- * This will take a text file and ouput a pdf with that text.
- *
+ * @Description: text转为PDF,目前没有使用,存档待后续使用<p>
+ * @author: passer<p>
+ * @version：2019年5月18日 下午1:42:17<p>
  */
 public class TextToPDF {
 	/**

@@ -22,10 +22,9 @@ import org.apache.pdfbox.io.MemoryUsageSetting;
 import org.apache.pdfbox.multipdf.PDFMergerUtility;
 
 /**
- * This is the main program that will take a list of pdf documents and merge them,
- * saving the result in a new document.
- *
- * @author Ben Litchfield
+ * @Description: PDF合并类,将多个PDF合并为一个,目前没有使用,存档待后续使用<p>
+ * @author: passer<p>
+ * @version：2019年5月18日 下午1:42:17<p>
  */
 public final class PDFMerger {
 

@@ -17,7 +17,7 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.apache.commons.io.FilenameUtils;
 
 /**
-* @Description: <p>
+* @Description: 文件上传工具类,并根据opt参数进行请求转发到不同Servlet中<p>
 * @author: passer<p>
 * @version：2019年5月19日 下午8:22:26<p>
 */

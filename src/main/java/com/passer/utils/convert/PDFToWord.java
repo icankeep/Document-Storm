@@ -13,7 +13,7 @@ import com.passer.exception.LogicException;
 import lombok.Cleanup;
 
 /**
-* @Description: <p>
+* @Description: PDF转Word<p>
 * @author: passer<p>
 * @version：2019年5月19日 下午9:46:12<p>
 */

@@ -15,7 +15,7 @@ import com.passer.domain.PlayLists;
 import com.passer.domain.Song;
 
 /**
-* @Description: <p>
+* @Description: 网易云评论爬取工具类<p>
 * @author: passer<p>
 * @version：2019年5月20日 下午8:27:02<p>
 */

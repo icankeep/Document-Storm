@@ -9,7 +9,7 @@ import org.junit.Test;
 import lombok.Data;
 
 /**
-* @Description: 网易云评论类<p>
+* @Description: 网易云评论类,封装了包含评论的属性<p>
 * @author: passer<p>
 * @version：2019年5月20日 下午8:17:28<p>
 */

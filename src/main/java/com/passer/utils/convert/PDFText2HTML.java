@@ -29,11 +29,9 @@ import org.apache.pdfbox.text.PDFTextStripper;
 import org.apache.pdfbox.text.TextPosition;
 
 /**
- * Wrap stripped text in simple HTML, trying to form HTML paragraphs. Paragraphs
- * broken by pages, columns, or figures are not mended.
- *
- * @author John J Barton
- * 
+ * @Description: PDF text 转 HTML转换类,目前没有使用,存档待后续使用<p>
+ * @author: passer<p>
+ * @version：2019年5月18日 下午1:42:17<p>
  */
 public class PDFText2HTML extends PDFTextStripper {
 	private static final int INITIAL_PDF_TO_HTML_BYTES = 8192;

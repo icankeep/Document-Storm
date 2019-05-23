@@ -32,8 +32,9 @@ import org.apache.pdfbox.rendering.PDFRenderer;
 import org.apache.pdfbox.tools.imageio.ImageIOUtil;
 
 /**
- * Convert a PDF document to an image.
- *
+ * @Description: PDF转图像,目前没有使用,存档待后续使用<p>
+ * @author: passer<p>
+ * @version：2019年5月18日 下午1:42:17<p>
  */
 public final class PDFToImage {
 	private static final String PASSWORD = "-password";

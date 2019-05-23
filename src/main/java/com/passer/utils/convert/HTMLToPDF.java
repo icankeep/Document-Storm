@@ -1,7 +1,7 @@
 package com.passer.utils.convert;
 
 /**
-* @Description: HTML转PDF<p>
+* @Description: HTML转PDF的转换类<p>
 * @author: passer<p>
 * @version：2019年5月18日 上午11:51:00<p>
 */

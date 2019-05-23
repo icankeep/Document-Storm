@@ -22,7 +22,7 @@ import com.passer.utils.crawl.MyJsonResolve;
 import lombok.Cleanup;
 
 /**
-* @Description: <p>
+* @Description: 文档翻译Servlet类<p>
 * @author: passer<p>
 * @version：2019年5月20日 下午1:37:53<p>
 */

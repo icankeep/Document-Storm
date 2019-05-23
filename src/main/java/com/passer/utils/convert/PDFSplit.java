@@ -27,10 +27,9 @@ import org.apache.pdfbox.pdfwriter.COSWriter;
 import org.apache.pdfbox.multipdf.Splitter;
 
 /**
- * This is the main program that will take a pdf document and split it into
- * a number of other documents.
- *
- * @author Ben Litchfield
+ * @Description: PDF分割类,将PDF分割为多个PDF,目前没有使用,存档待后续使用<p>
+ * @author: passer<p>
+ * @version：2019年5月18日 下午1:42:17<p>
  */
 public final class PDFSplit {
 	private static final String PASSWORD = "-password";

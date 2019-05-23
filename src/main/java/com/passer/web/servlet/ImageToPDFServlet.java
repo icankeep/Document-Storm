@@ -13,8 +13,7 @@ import org.apache.commons.io.FilenameUtils;
 import com.passer.utils.convert.ImageToPDF;
 
 /**
- * @ClassName: PDFServlet
- * @description: PDF文件上传到服务器转成DOC，并供用户下载
+ * @description: 图像转为pdf的Servlet类
  * @author: passer
  * @Date: 2019年3月22日 下午4:10:00
  */

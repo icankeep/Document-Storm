@@ -10,7 +10,7 @@ import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 import lombok.Cleanup;
 
 /**
-* @Description: <p>
+* @Description: 图像转PDF转换类<p>
 * @author: passer<p>
 * @version：2019年5月19日 下午10:22:15<p>
 */

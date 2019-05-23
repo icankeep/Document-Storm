@@ -45,11 +45,9 @@ import org.apache.pdfbox.text.TextPosition;
 import org.apache.pdfbox.util.Matrix;
 
 /**
- * This is the main program that simply parses the pdf document and transforms it
- * into text.
- *
- * @author Ben Litchfield
- * @author Tilman Hausherr
+ * @Description: 目前还没有使用,待开发<p>
+ * @author: passer<p>
+ * @version：2019年5月19日 下午10:22:15<p>
  */
 public final class ExtractText {
 	private static final Log LOG = LogFactory.getLog(ExtractText.class);

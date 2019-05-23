@@ -13,10 +13,9 @@ import org.apache.commons.io.FilenameUtils;
 import com.passer.utils.convert.HTMLToPDF;
 
 /**
- * @ClassName: PDFServlet
- * @description: PDF文件上传到服务器转成DOC，并供用户下载
- * @author: passer
- * @Date: 2019年3月22日 下午4:10:00
+ * @description: 将html转为pdf的Servlet类<p>
+ * @author: passer<p>
+ * @Date: 2019年3月22日 下午4:10:00<p>
  */
 @WebServlet("/html2pdf")
 public class HTMLToPDFServlet extends HttpServlet {

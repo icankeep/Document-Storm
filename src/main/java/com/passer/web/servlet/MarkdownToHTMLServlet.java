@@ -14,8 +14,7 @@ import com.passer.utils.convert.MarkdownToHTML;
 import com.passer.utils.convert.PDFToWord;
 
 /**
- * @ClassName: PDFServlet
- * @description: PDF文件上传到服务器转成DOC，并供用户下载
+ * @description: markdown转为html的Servlet类
  * @author: passer
  * @Date: 2019年3月22日 下午4:10:00
  */

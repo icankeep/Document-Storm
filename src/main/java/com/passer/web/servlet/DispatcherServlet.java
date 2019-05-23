@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
-* @Description: <p>
+* @Description: 用于对网站请求的分发,根据opt参数值确定后续的操作<p>
 * @author: passer<p>
 * @version：2019年5月19日 上午10:54:15<p>
 */

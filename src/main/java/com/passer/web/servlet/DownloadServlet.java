@@ -13,7 +13,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 
 /**
-* @Description: <p>
+* @Description: 文件下载辅助工具类<p>
 * @author: passer<p>
 * @version：2019年5月19日 下午8:24:23<p>
 */
