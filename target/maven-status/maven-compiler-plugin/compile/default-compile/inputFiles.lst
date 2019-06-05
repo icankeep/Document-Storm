@@ -16,10 +16,10 @@
 /opt/eclipse/workspace/docstorm/src/main/java/com/passer/web/servlet/ImageToPDFServlet.java
 /opt/eclipse/workspace/docstorm/src/main/java/com/passer/utils/convert/PDFMerger.java
 /opt/eclipse/workspace/docstorm/src/main/java/com/passer/web/servlet/TranslateServlet.java
-/opt/eclipse/workspace/docstorm/src/main/java/com/passer/domain/Songs.java
 /opt/eclipse/workspace/docstorm/src/main/java/com/passer/domain/User.java
 /opt/eclipse/workspace/docstorm/src/main/java/com/passer/web/servlet/PDFToWordServlet.java
 /opt/eclipse/workspace/docstorm/src/main/java/com/passer/utils/convert/PDFToWord.java
+/opt/eclipse/workspace/docstorm/src/main/java/com/passer/utils/crawl/GoogleTranslateUtil.java
 /opt/eclipse/workspace/docstorm/src/main/java/com/passer/domain/Song.java
 /opt/eclipse/workspace/docstorm/src/main/java/com/passer/utils/convert/PDFSplit.java
 /opt/eclipse/workspace/docstorm/src/main/java/com/passer/domain/Comments.java
@@ -30,6 +30,5 @@
 /opt/eclipse/workspace/docstorm/src/main/java/com/passer/utils/crawl/MyJsonResolve.java
 /opt/eclipse/workspace/docstorm/src/main/java/com/passer/web/servlet/MarkdownToPDFServlet.java
 /opt/eclipse/workspace/docstorm/src/main/java/com/passer/utils/convert/MarkdownToHTML.java
-/opt/eclipse/workspace/docstorm/src/main/java/com/passer/file/CFile.java
 /opt/eclipse/workspace/docstorm/src/main/java/com/passer/domain/PlayLists.java
 /opt/eclipse/workspace/docstorm/src/main/java/com/passer/utils/crawl/GsonUtils.java
