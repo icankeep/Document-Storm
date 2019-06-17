@@ -124,7 +124,12 @@
 			<artifactId>spring-context</artifactId>
 			<version>5.1.7.RELEASE</version>
 		</dependency>
-
+		<!-- https://mvnrepository.com/artifact/com.aspose/aspose-words -->
+		<dependency>
+			<groupId>com.aspose</groupId>
+			<artifactId>aspose-words</artifactId>
+			<version>15.8.0</version>
+		</dependency>
 
 	</dependencies>
 

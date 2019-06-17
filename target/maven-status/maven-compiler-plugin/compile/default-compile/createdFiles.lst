@@ -25,6 +25,8 @@ com/passer/utils/convert/ImageToPDF.class
 com/passer/utils/convert/ExtractImages$ImageGraphicsEngine.class
 com/passer/domain/PlayList.class
 com/passer/domain/Comment.class
+com/passer/utils/convert/WordToPDF.class
+com/passer/web/servlet/WordToPDFServlet.class
 com/passer/utils/convert/PDFText2HTML$1.class
 com/passer/domain/Song.class
 com/passer/web/servlet/MarkdownToHTMLServlet.class

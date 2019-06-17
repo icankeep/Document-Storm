@@ -99,6 +99,17 @@
 						<div class="row trans-table">
 							<div class="col-xs-6 col-lg-4">
 								<div class="item">
+									<h2>Word to PDF</h2>
+									<p>将Word格式的文件(支持doc、docx和odt后缀)转为PDF文档.</p>
+									<p>
+										<a class="btn btn-default"
+										   href="${pageContext.request.contextPath }/dispatcher?opt=doc2pdf"
+										   role="button">文件上传 &raquo;</a>
+									</p>
+								</div>
+							</div>
+							<div class="col-xs-6 col-lg-4">
+								<div class="item">
 									<h2>PDF to Word</h2>
 									<p>PDF文档转换成Word文档，还可以选择生成word的字体.</p>
 									<p>
@@ -148,17 +159,6 @@
 									<p>
 										<a class="btn btn-default"
 											href="${pageContext.request.contextPath }/dispatcher?opt=html2pdf"
-											role="button">文件上传 &raquo;</a>
-									</p>
-								</div>
-							</div>
-							<div class="col-xs-6 col-lg-4">
-								<div class="item">
-									<h2>Image to PDF</h2>
-									<p>将图片格式的文件转为PDF文档.完全免费哦</p>
-									<p>
-										<a class="btn btn-default"
-											href="${pageContext.request.contextPath }/dispatcher?opt=image2pdf"
 											role="button">文件上传 &raquo;</a>
 									</p>
 								</div>

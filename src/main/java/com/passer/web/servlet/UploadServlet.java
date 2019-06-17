@@ -1,20 +1,19 @@
 package com.passer.web.servlet;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.Iterator;
-import java.util.List;
+import org.apache.commons.fileupload.FileItem;
+import org.apache.commons.fileupload.disk.DiskFileItemFactory;
+import org.apache.commons.fileupload.servlet.ServletFileUpload;
+import org.apache.commons.io.FilenameUtils;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import org.apache.commons.fileupload.FileItem;
-import org.apache.commons.fileupload.disk.DiskFileItemFactory;
-import org.apache.commons.fileupload.servlet.ServletFileUpload;
-import org.apache.commons.io.FilenameUtils;
+import java.io.File;
+import java.io.IOException;
+import java.util.Iterator;
+import java.util.List;
 
 /**
 * @Description: 文件上传工具类,并根据opt参数进行请求转发到不同Servlet中<p>
@@ -90,10 +89,10 @@ public class UploadServlet extends HttpServlet {
 				req.getRequestDispatcher("/md2html").forward(req, resp);
 			} else if ("md2pdf".equals(opt) && "md".equals(fileExtension)) {
 				req.getRequestDispatcher("/md2pdf").forward(req, resp);
-			} else if ("word_translate".equals(opt) && "doc".equals(fileExtension)) {
+			} else if ("word_translate".equals(opt)) {
 				req.getRequestDispatcher("/word_translate").forward(req, resp);
-			} else if ("image2pdf".equals(opt) && ("jpg".equals(fileExtension) || "png".equals(fileExtension))) {
-				req.getRequestDispatcher("/image2pdf").forward(req, resp);
+			} else if ("doc2pdf".equals(opt) && ("doc".equals(fileExtension) || "docx".equals(fileExtension) || "odt".equals(fileExtension))) {
+				req.getRequestDispatcher("/doc2pdf").forward(req, resp);
 			} else if ("html2pdf".equals(opt) && "html".equals(fileExtension)) {
 				req.getRequestDispatcher("/html2pdf").forward(req, resp);
 			}

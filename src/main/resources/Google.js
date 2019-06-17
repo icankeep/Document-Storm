@@ -10,6 +10,7 @@
 //     //返回的结果
 //     //[[["新年快乐！","happy new year!",,,1],[,,"Xīnnián kuàilè!"]],[["感叹词",["恭贺新禧!","新年好!"],[["恭贺新禧!",["Happy New Year!"]],["新年好!",["Happy New Year!"]]],"Happy New Year!",9]],"en",,,[["happy new year!",32000,[["新年快乐！",0,true,false]],[[0,15]],"happy new year!",0,0]],0.61467338,,[["en"],,[0.61467338]],,,,,,[["Happy New Year!","happy","new","year","new year"]]]
 // }
+// TKK=eval('((function(){var a\x3d618632403;var b\x3d1485484074;return 412204+\x27.\x27+(a+b)})())');
 
 function TL(a) {
     var k = "";

@@ -1,6 +1,8 @@
 /opt/eclipse/workspace/docstorm/src/main/java/com/passer/utils/convert/PDFToImage.java
 /opt/eclipse/workspace/docstorm/src/main/java/com/passer/web/servlet/DownloadServlet.java
+/opt/eclipse/workspace/docstorm/src/main/java/com/passer/utils/convert/WordToPDF.java
 /opt/eclipse/workspace/docstorm/src/main/java/com/passer/utils/convert/ImageToPDF.java
+/opt/eclipse/workspace/docstorm/src/main/java/com/passer/web/servlet/WordToPDFServlet.java
 /opt/eclipse/workspace/docstorm/src/main/java/com/passer/utils/convert/ExtractImages.java
 /opt/eclipse/workspace/docstorm/src/main/java/com/passer/web/servlet/IndexServlet.java
 /opt/eclipse/workspace/docstorm/src/main/java/com/passer/web/servlet/MarkdownToHTMLServlet.java

@@ -1,14 +1,13 @@
 package com.passer.web.servlet;
 
-import java.io.IOException;
-import java.util.HashSet;
-import java.util.Set;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
 * @Description: 用于对网站请求的分发,根据opt参数值确定后续的操作<p>
@@ -28,14 +27,13 @@ public class DispatcherServlet extends HttpServlet{
 		optSet.add("md2pdf");
 		optSet.add("word_translate");
 		optSet.add("html2pdf");
-		optSet.add("image2pdf");
+		optSet.add("doc2pdf");
 	}
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String opt = req.getParameter("opt");
 		if(opt == null || !optSet.contains(opt)) {
-			//调到错误界面
-			return;
+			resp.sendRedirect("error.jsp");
 		}
 		req.setAttribute("opt", opt);
 		req.getRequestDispatcher("fileupload.jsp").forward(req, resp);
