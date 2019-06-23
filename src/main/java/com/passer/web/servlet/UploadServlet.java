@@ -39,6 +39,8 @@ public class UploadServlet extends HttpServlet {
 		// Create a new file upload handler
 		ServletFileUpload upload = new ServletFileUpload(factory);
 
+		upload.setHeaderEncoding("utf-8");
+
 		// Parse the request
 		try {
 			List<FileItem> items = upload.parseRequest(req);
@@ -57,6 +59,7 @@ public class UploadServlet extends HttpServlet {
 					}
 				} else {
 					String fileName = FilenameUtils.getName(item.getName());
+					System.out.println(fileName);
 					fileExtension = FilenameUtils.getExtension(item.getName());
 					// 获取上传文件夹目录
 					String dir = req.getServletContext().getRealPath("/WEB-INF/upload/");

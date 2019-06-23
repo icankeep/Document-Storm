@@ -1,16 +1,14 @@
 package com.passer.web.servlet;
 
-import java.io.IOException;
+import com.passer.utils.convert.PDFToWord;
+import org.apache.commons.io.FilenameUtils;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import org.apache.commons.io.FilenameUtils;
-
-import com.passer.utils.convert.PDFToWord;
+import java.io.IOException;
 
 /**
  * @description: pdf转为Word的Servlet类
