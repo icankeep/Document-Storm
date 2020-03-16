@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.passer.api.dao.DiscussCommentDao">
+  <resultMap id="BaseResultMap" type="com.passer.api.model.DiscussComment">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="event_id" jdbcType="BIGINT" property="eventId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, user_id, content, create_time, event_id
+  </sql>
+  <select id="selectById" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from discuss_comment
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <select id="selectByDiscussEventId" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from discuss_comment
+    where event_id = #{eventId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteById">
+    delete from discuss_comment
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" useGeneratedKeys="true">
+    insert into discuss_comment
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="content != null">
+        content,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="eventId != null">
+        event_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="userId != null">
+        #{userId,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null">
+        #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="eventId != null">
+        #{eventId,jdbcType=BIGINT},
+      </if>
+    </trim>
+  </insert>
+</mapper>

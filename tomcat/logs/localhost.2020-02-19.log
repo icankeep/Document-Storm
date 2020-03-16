@@ -1,0 +1,228 @@
+19-Feb-2020 10:58:43.804 SEVERE [http-nio-8080-exec-12] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:43.831 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:43.861 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:43.881 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:43.901 SEVERE [http-nio-8080-exec-13] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:43.931 SEVERE [http-nio-8080-exec-14] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:43.956 SEVERE [http-nio-8080-exec-11] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:43.979 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:43.990 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.017 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.041 SEVERE [http-nio-8080-exec-12] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.066 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.092 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.118 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.143 SEVERE [http-nio-8080-exec-13] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.168 SEVERE [http-nio-8080-exec-14] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.193 SEVERE [http-nio-8080-exec-11] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.219 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.245 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.270 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.296 SEVERE [http-nio-8080-exec-12] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.321 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.345 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.373 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.397 SEVERE [http-nio-8080-exec-13] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.422 SEVERE [http-nio-8080-exec-14] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.447 SEVERE [http-nio-8080-exec-11] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.472 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.500 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.526 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.553 SEVERE [http-nio-8080-exec-12] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.579 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.604 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.631 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.654 SEVERE [http-nio-8080-exec-13] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.681 SEVERE [http-nio-8080-exec-14] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.705 SEVERE [http-nio-8080-exec-11] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.722 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.749 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.774 SEVERE [http-nio-8080-exec-12] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.799 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.824 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.850 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.875 SEVERE [http-nio-8080-exec-13] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.900 SEVERE [http-nio-8080-exec-14] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.924 SEVERE [http-nio-8080-exec-11] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.949 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.975 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:44.999 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:45.025 SEVERE [http-nio-8080-exec-12] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:45.049 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:45.075 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:45.102 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:45.127 SEVERE [http-nio-8080-exec-13] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:45.152 SEVERE [http-nio-8080-exec-14] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:45.179 SEVERE [http-nio-8080-exec-11] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:45.204 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:45.230 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:45.256 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:45.282 SEVERE [http-nio-8080-exec-12] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:45.308 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:45.334 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:45.361 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:45.386 SEVERE [http-nio-8080-exec-13] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:45.413 SEVERE [http-nio-8080-exec-14] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:45.438 SEVERE [http-nio-8080-exec-11] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:45.463 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:45.491 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:45.517 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:45.543 SEVERE [http-nio-8080-exec-12] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:45.569 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:45.595 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:45.622 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:45.648 SEVERE [http-nio-8080-exec-13] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:45.672 SEVERE [http-nio-8080-exec-14] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+
+19-Feb-2020 10:58:45.698 SEVERE [http-nio-8080-exec-11] org.apache.catalina.core.StandardHostValve.custom Exception Processing ErrorPage[errorCode=403, location=/WEB-INF/jsp/403.jsp]
+ java.lang.NullPointerException
+

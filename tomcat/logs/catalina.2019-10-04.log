@@ -1,0 +1,15 @@
+04-Oct-2019 13:01:29.129 INFO [http-nio-8080-exec-9] org.apache.tomcat.util.http.parser.Cookie.logInvalidHeader A cookie header was received [selected":""}; ISMS_8700_Sessionname=52B3281A5AE980BE78DEC5C41A62B4F6; pmaCookieVer=4; phpMyAdmin=7latlq3p4meqo4ej053lkip5v5n4vf0b; pma_mcrypt_iv=6Gccw4LRaPM%3D; JSESSIONID=9E4D1A669C70FBB945E154B501713F35; JSESSIONID.b96f8a8d=node0jkca7u1m85zkkas6b27plpth2670.node0; ssessionid=e0501b96-50fd-4684-a69c-09bde585864c; JSESSIONID.d4c9a663=node01jfd8vbbjj4eteofl710tin2010.node0] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+04-Oct-2019 19:17:42.091 INFO [http-nio-8080-exec-3] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+ java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:422)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:667)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1441)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+

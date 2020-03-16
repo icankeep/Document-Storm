@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.passer.api.dao.ChatRecordDao">
+  <resultMap id="BaseResultMap" type="com.passer.api.model.ChatRecord">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="time" jdbcType="VARCHAR" property="time" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="send_user_id" jdbcType="VARCHAR" property="sendUserId" />
+    <result column="receive_user_id" jdbcType="VARCHAR" property="receiveUserId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, `time`, content, send_user_id, receive_user_id
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from chat_record
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from chat_record
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.passer.api.model.ChatRecord" useGeneratedKeys="true">
+    insert into chat_record (`time`, content, send_user_id, 
+      receive_user_id)
+    values (#{time,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR}, #{sendUserId,jdbcType=VARCHAR}, 
+      #{receiveUserId,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.passer.api.model.ChatRecord" useGeneratedKeys="true">
+    insert into chat_record
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="time != null">
+        `time`,
+      </if>
+      <if test="content != null">
+        content,
+      </if>
+      <if test="sendUserId != null">
+        send_user_id,
+      </if>
+      <if test="receiveUserId != null">
+        receive_user_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="time != null">
+        #{time,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null">
+        #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="sendUserId != null">
+        #{sendUserId,jdbcType=VARCHAR},
+      </if>
+      <if test="receiveUserId != null">
+        #{receiveUserId,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.passer.api.model.ChatRecord">
+    update chat_record
+    <set>
+      <if test="time != null">
+        `time` = #{time,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null">
+        content = #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="sendUserId != null">
+        send_user_id = #{sendUserId,jdbcType=VARCHAR},
+      </if>
+      <if test="receiveUserId != null">
+        receive_user_id = #{receiveUserId,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.passer.api.model.ChatRecord">
+    update chat_record
+    set `time` = #{time,jdbcType=VARCHAR},
+      content = #{content,jdbcType=VARCHAR},
+      send_user_id = #{sendUserId,jdbcType=VARCHAR},
+      receive_user_id = #{receiveUserId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

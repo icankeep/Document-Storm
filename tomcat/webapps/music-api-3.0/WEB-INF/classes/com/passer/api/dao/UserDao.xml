@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.passer.api.dao.UserDao">
+  <insert id="insert" keyColumn="id" keyProperty="profile.userId">
+    insert into user
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="profile.userId != null">
+        id,
+      </if>
+      <if test="phone != null">
+        phone,
+      </if>
+      <if test="email != null">
+        email,
+      </if>
+      <if test="password != null">
+        `password`,
+      </if>
+      <if test="profile.nickname != null">
+        nickname,
+      </if>
+      <if test="profile.gender != null">
+        gender,
+      </if>
+      <if test="profile.birthday != null">
+        birthday,
+      </if>
+      <if test="profile.city != null">
+        city,
+      </if>
+      <if test="profile.province != null">
+        province,
+      </if>
+      <if test="profile.backgroundUrl != null">
+        background_url,
+      </if>
+      <if test="profile.avatarUrl != null">
+        avatar_url,
+      </if>
+      <if test="profile.followeds != null">
+        followeds,
+      </if>
+      <if test="profile.follows != null">
+        follows,
+      </if>
+      <if test="profile.eventCount != null">
+        event_count,
+      </if>
+      <if test="profile.playlistCount != null">
+        playlist_count,
+      </if>
+      <if test="profile.detailDescription != null">
+        detail_description,
+      </if>
+      <if test="peopleCanSeeMyPlayRecord != null">
+        people_can_see_my_play_record,
+      </if>
+      <if test="level != null">
+        `level`,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="listenSongs != null">
+        listen_songs,
+      </if>
+      <if test="createDays != null">
+        create_days,
+      </if>
+      <if test="profile.defaultAvatar != null">
+        default_avatar,
+      </if>
+      <if test="profile.followed != null">
+        followed,
+      </if>
+      <if test="profile.signature != null">
+        signature,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="profile.userId != null">
+        #{profile.userId,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null">
+        #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.nickname != null">
+        #{profile.nickname,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.gender != null">
+        #{profile.gender,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.birthday != null">
+        #{profile.birthday,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.city != null">
+        #{profile.city,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.province != null">
+        #{profile.province,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.backgroundUrl != null">
+        #{profile.backgroundUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.avatarUrl != null">
+        #{profile.avatarUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.followeds != null">
+        #{profile.followeds,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.follows != null">
+        #{profile.follows,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.eventCount != null">
+        #{profile.eventCount,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.playlistCount != null">
+        #{profile.playlistCount,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.detailDescription != null">
+        #{profile.detailDescription,jdbcType=VARCHAR},
+      </if>
+      <if test="peopleCanSeeMyPlayRecord != null">
+        #{peopleCanSeeMyPlayRecord,jdbcType=BIT},
+      </if>
+      <if test="level != null">
+        #{level,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=VARCHAR},
+      </if>
+      <if test="listenSongs != null">
+        #{listenSongs,jdbcType=VARCHAR},
+      </if>
+      <if test="createDays != null">
+        #{createDays,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.defaultAvatar != null">
+        #{profile.defaultAvatar,jdbcType=BIT},
+      </if>
+      <if test="profile.followed != null">
+        #{profile.followed,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.signature != null">
+        #{profile.signature,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+
+  <update id="update">
+    update user
+    <set>
+      <if test="phone != null">
+        phone = #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        email = #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        `password` = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.nickname != null">
+        nickname = #{profile.nickname,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.gender != null">
+        gender = #{profile.gender,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.birthday != null">
+        birthday = #{profile.birthday,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.city != null">
+        city = #{profile.city,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.province != null">
+        province = #{profile.province,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.backgroundUrl != null">
+        background_url = #{profile.backgroundUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.avatarUrl != null">
+        avatar_url = #{profile.avatarUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.followeds != null">
+        followeds = #{profile.followeds,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.follows != null">
+        follows = #{profile.follows,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.eventCount != null">
+        event_count = #{profile.eventCount,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.playlistCount != null">
+        playlist_count = #{profile.playlistCount,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.detailDescription != null">
+        detail_description = #{profile.detailDescription,jdbcType=VARCHAR},
+      </if>
+      <if test="peopleCanSeeMyPlayRecord != null">
+        people_can_see_my_play_record = #{peopleCanSeeMyPlayRecord,jdbcType=BIT},
+      </if>
+      <if test="level != null">
+        `level` = #{level,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=VARCHAR},
+      </if>
+      <if test="listenSongs != null">
+        listen_songs = #{listenSongs,jdbcType=VARCHAR},
+      </if>
+      <if test="createDays != null">
+        create_days = #{createDays,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.defaultAvatar != null">
+        default_avatar = #{profile.defaultAvatar,jdbcType=BIT},
+      </if>
+      <if test="profile.followed != null">
+        followed = #{profile.followed,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.signature != null">
+        signature = #{profile.signature,jdbcType=VARCHAR},
+      </if>
+      <if test="profile.userId != null">
+        id = #{profile.userId, jdbcType=VARCHAR}
+      </if>
+    </set>
+    where id = #{profile.userId,jdbcType=VARCHAR}
+  </update>
+
+  <delete id="deleteById">
+    delete from user
+    where id = #{id, jdbcType=VARCHAR}
+  </delete>
+
+  <resultMap id="BaseResultMap" type="com.passer.api.model.User">
+    <id column="id" jdbcType="VARCHAR" property="profile.userId" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="nickname" jdbcType="VARCHAR" property="profile.nickname" />
+    <result column="gender" jdbcType="VARCHAR" property="profile.gender" />
+    <result column="birthday" jdbcType="VARCHAR" property="profile.birthday" />
+    <result column="city" jdbcType="VARCHAR" property="profile.city" />
+    <result column="province" jdbcType="VARCHAR" property="profile.province" />
+    <result column="background_url" jdbcType="VARCHAR" property="profile.backgroundUrl" />
+    <result column="avatar_url" jdbcType="VARCHAR" property="profile.avatarUrl" />
+    <result column="followeds" jdbcType="VARCHAR" property="profile.followeds" />
+    <result column="follows" jdbcType="VARCHAR" property="profile.follows" />
+    <result column="event_count" jdbcType="VARCHAR" property="profile.eventCount" />
+    <result column="playlist_count" jdbcType="VARCHAR" property="profile.playlistCount" />
+    <result column="detail_description" jdbcType="VARCHAR" property="profile.detailDescription" />
+    <result column="people_can_see_my_play_record" jdbcType="BIT" property="peopleCanSeeMyPlayRecord" />
+    <result column="level" jdbcType="VARCHAR" property="level" />
+    <result column="create_time" jdbcType="VARCHAR" property="createTime" />
+    <result column="listen_songs" jdbcType="VARCHAR" property="listenSongs" />
+    <result column="create_days" jdbcType="VARCHAR" property="createDays" />
+    <result column="default_avatar" jdbcType="BIT" property="profile.defaultAvatar" />
+    <result column="followed" jdbcType="VARCHAR" property="profile.followed" />
+    <result column="signature" jdbcType="VARCHAR" property="profile.signature" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, phone, email, `password`, nickname, gender, birthday, city, province, background_url,
+    avatar_url, followeds, follows, event_count, playlist_count, detail_description,
+    people_can_see_my_play_record, `level`, create_time, listen_songs, create_days, default_avatar,
+    followed, signature
+  </sql>
+  <select id="selectById" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from user
+    where id = #{id, jdbcType=VARCHAR}
+  </select>
+
+  <select id="selectAll" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List"></include>
+    from user
+  </select>
+</mapper>

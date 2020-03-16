@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.passer.api.dao.RecordDao">
+  <resultMap id="BaseResultMap" type="com.passer.api.model.Record">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="song_id" jdbcType="VARCHAR" property="song.song.songId" />
+    <result column="song_name" jdbcType="VARCHAR" property="song.song.songName" />
+    <result column="artist_id" jdbcType="VARCHAR" property="song.song.artist.artistId" />
+    <result column="artist_name" jdbcType="VARCHAR" property="song.song.artist.artistName" />
+    <result column="play_count" jdbcType="VARCHAR" property="playCount" />
+    <result column="score" jdbcType="INTEGER" property="score" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, song_id, song_name, artist_id, artist_name, play_count, score, user_id
+  </sql>
+  <select id="selectByUserId" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from record
+    where user_id = #{userId,jdbcType=VARCHAR}
+  </select>
+
+  <select id="selectAllUserIdExcludeOne" resultType="java.lang.String">
+        select user_id
+        from record
+        where user_id != #{userId}
+        group by user_id
+  </select>
+
+  <delete id="deleteByUserId">
+    delete from record
+    where user_id = #{userId, jdbcType=VARCHAR}
+  </delete>
+
+  <insert id="insert" keyColumn="id" keyProperty="id" useGeneratedKeys="true">
+    insert into record
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="song.song.songId != null">
+        song_id,
+      </if>
+      <if test="song.song.songName != null">
+        song_name,
+      </if>
+      <if test="song.song.artist.artistId != null">
+        artist_id,
+      </if>
+      <if test="song.song.artist.artistName != null">
+        artist_name,
+      </if>
+      <if test="playCount != null">
+        play_count,
+      </if>
+      <if test="score != null">
+        score,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="song.song.songId != null">
+        #{song.song.songId,jdbcType=VARCHAR},
+      </if>
+      <if test="song.song.songName != null">
+        #{song.song.songName,jdbcType=VARCHAR},
+      </if>
+      <if test="song.song.artist.artistId != null">
+        #{song.song.artist.artistId,jdbcType=VARCHAR},
+      </if>
+      <if test="song.song.artist.artistName != null">
+        #{song.song.artist.artistName,jdbcType=VARCHAR},
+      </if>
+      <if test="playCount != null">
+        #{playCount,jdbcType=VARCHAR},
+      </if>
+      <if test="score != null">
+        #{score,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+
+  <insert id="insertByRecordList" keyColumn="id" keyProperty="id" useGeneratedKeys="true">
+    insert into record
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="r.song.song.songId != null">
+        song_id,
+      </if>
+      <if test="r.song.song.songName != null">
+        song_name,
+      </if>
+      <if test="r.song.song.artist.artistId != null">
+        artist_id,
+      </if>
+      <if test="r.song.song.artist.artistName != null">
+        artist_name,
+      </if>
+      <if test="r.playCount != null">
+        play_count,
+      </if>
+      <if test="r.score != null">
+        score,
+      </if>
+      <if test="r.userId != null">
+        user_id,
+      </if>
+    </trim>
+    values
+    <foreach collection="list" separator="," item="r">
+      <trim prefix="(" suffix=")" suffixOverrides=",">
+        <if test="r.song.song.songId != null">
+          #{r.song.song.songId,jdbcType=VARCHAR},
+        </if>
+        <if test="r.song.song.songName != null">
+          #{r.song.song.songName,jdbcType=VARCHAR},
+        </if>
+        <if test="r.song.song.artist.artistId != null">
+          #{r.song.song.artist.artistId,jdbcType=VARCHAR},
+        </if>
+        <if test="r.song.song.artist.artistName != null">
+          #{r.song.song.artist.artistName,jdbcType=VARCHAR},
+        </if>
+        <if test="r.playCount != null">
+          #{r.playCount,jdbcType=VARCHAR},
+        </if>
+        <if test="r.score != null">
+          #{r.score,jdbcType=INTEGER},
+        </if>
+        <if test="r.userId != null">
+          #{r.userId,jdbcType=VARCHAR},
+        </if>
+      </trim>
+    </foreach>
+  </insert>
+
+
+<!--  <insert id="insertByRecordList" keyColumn="id" keyProperty="id" useGeneratedKeys="true">-->
+<!--    <foreach collection="list" separator=";" item="r">-->
+<!--      insert into record-->
+<!--      <trim prefix="(" suffix=")" suffixOverrides=",">-->
+<!--        <if test="r.song.song.songId != null">-->
+<!--          song_id,-->
+<!--        </if>-->
+<!--        <if test="r.song.song.songName != null">-->
+<!--          song_name,-->
+<!--        </if>-->
+<!--        <if test="r.song.song.artist.artistId != null">-->
+<!--          artist_id,-->
+<!--        </if>-->
+<!--        <if test="r.song.song.artist.artistName != null">-->
+<!--          artist_name,-->
+<!--        </if>-->
+<!--        <if test="r.playCount != null">-->
+<!--          play_count,-->
+<!--        </if>-->
+<!--        <if test="r.score != null">-->
+<!--          score,-->
+<!--        </if>-->
+<!--        <if test="r.userId != null">-->
+<!--          user_id,-->
+<!--        </if>-->
+<!--      </trim>-->
+<!--      <trim prefix="values (" suffix=")" suffixOverrides=",">-->
+<!--        <if test="r.song.song.songId != null">-->
+<!--          #{r.song.song.songId,jdbcType=VARCHAR},-->
+<!--        </if>-->
+<!--        <if test="r.song.song.songName != null">-->
+<!--          #{r.song.song.songName,jdbcType=VARCHAR},-->
+<!--        </if>-->
+<!--        <if test="r.song.song.artist.artistId != null">-->
+<!--          #{r.song.song.artist.artistId,jdbcType=VARCHAR},-->
+<!--        </if>-->
+<!--        <if test="r.song.song.artist.artistName != null">-->
+<!--          #{r.song.song.artist.artistName,jdbcType=VARCHAR},-->
+<!--        </if>-->
+<!--        <if test="r.playCount != null">-->
+<!--          #{r.playCount,jdbcType=VARCHAR},-->
+<!--        </if>-->
+<!--        <if test="r.score != null">-->
+<!--          #{r.score,jdbcType=INTEGER},-->
+<!--        </if>-->
+<!--        <if test="r.userId != null">-->
+<!--          #{r.userId,jdbcType=VARCHAR},-->
+<!--        </if>-->
+<!--      </trim>-->
+<!--    </foreach>-->
+<!--  </insert>-->
+</mapper>

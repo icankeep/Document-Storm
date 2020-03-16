@@ -1,0 +1,23 @@
+16-Nov-2019 12:39:06.924 INFO [Async2-Thread] async.Async2$1.run Putting AsyncThread to sleep
+16-Nov-2019 12:39:08.954 INFO [Async2-Thread] async.Async2$1.run Writing data.
+16-Nov-2019 12:40:16.051 INFO [Async0-Thread] async.Async0$1.run Putting AsyncThread to sleep
+16-Nov-2019 12:40:18.051 INFO [Async0-Thread] async.Async0$1.run Dispatching
+16-Nov-2019 12:40:18.053 INFO [http-nio-8080-exec-8] async.Async0.service Received dispatch, completing on the worker thread.
+16-Nov-2019 12:40:18.053 INFO [http-nio-8080-exec-8] async.Async0.service After complete called started:false
+16-Nov-2019 12:45:12.554 INFO [Async1-Thread] async.Async1$1.run Putting AsyncThread to sleep
+16-Nov-2019 12:45:14.554 INFO [117] async.Async1$1.run Dispatching to /jsp/async/async1.jsp
+16-Nov-2019 12:48:16.854 INFO [http-nio-8080-exec-13] async.AsyncStockServlet.<init> AsyncStockServlet created
+16-Nov-2019 18:49:21.972 INFO [http-nio-8080-exec-2] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+ java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:422)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:667)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1441)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+

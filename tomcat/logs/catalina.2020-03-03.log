@@ -1,0 +1,32 @@
+03-Mar-2020 04:50:20.051 INFO [http-nio-8080-exec-3] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+ java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:422)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:667)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1441)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+03-Mar-2020 13:28:08.437 WARNING [http-nio-8080-exec-14] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts An attempt was made to authenticate the locked user "tomcat"
+03-Mar-2020 13:28:08.614 WARNING [http-nio-8080-exec-12] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts An attempt was made to authenticate the locked user "tomcat"
+03-Mar-2020 13:28:08.772 WARNING [http-nio-8080-exec-1] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts An attempt was made to authenticate the locked user "tomcat"
+03-Mar-2020 13:28:08.937 WARNING [http-nio-8080-exec-2] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts An attempt was made to authenticate the locked user "tomcat"
+03-Mar-2020 13:28:09.106 WARNING [http-nio-8080-exec-8] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts An attempt was made to authenticate the locked user "tomcat"
+03-Mar-2020 13:28:09.263 WARNING [http-nio-8080-exec-6] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts An attempt was made to authenticate the locked user "tomcat"
+03-Mar-2020 13:28:09.425 WARNING [http-nio-8080-exec-11] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts An attempt was made to authenticate the locked user "tomcat"
+03-Mar-2020 13:28:09.598 WARNING [http-nio-8080-exec-13] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts An attempt was made to authenticate the locked user "tomcat"
+03-Mar-2020 13:28:09.778 WARNING [http-nio-8080-exec-3] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts An attempt was made to authenticate the locked user "tomcat"
+03-Mar-2020 13:28:10.611 WARNING [http-nio-8080-exec-2] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts An attempt was made to authenticate the locked user "admin"
+03-Mar-2020 13:28:10.775 WARNING [http-nio-8080-exec-8] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts An attempt was made to authenticate the locked user "admin"
+03-Mar-2020 13:28:10.935 WARNING [http-nio-8080-exec-6] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts An attempt was made to authenticate the locked user "admin"
+03-Mar-2020 13:28:11.090 WARNING [http-nio-8080-exec-11] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts An attempt was made to authenticate the locked user "admin"
+03-Mar-2020 13:28:11.243 WARNING [http-nio-8080-exec-13] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts An attempt was made to authenticate the locked user "admin"
+03-Mar-2020 13:28:11.406 WARNING [http-nio-8080-exec-3] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts An attempt was made to authenticate the locked user "admin"
+03-Mar-2020 13:28:11.573 WARNING [http-nio-8080-exec-9] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts An attempt was made to authenticate the locked user "admin"
+03-Mar-2020 13:28:11.733 WARNING [http-nio-8080-exec-14] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts An attempt was made to authenticate the locked user "admin"
+03-Mar-2020 13:28:11.912 WARNING [http-nio-8080-exec-12] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts An attempt was made to authenticate the locked user "admin"

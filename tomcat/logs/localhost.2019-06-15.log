@@ -1,0 +1,7 @@
+15-Jun-2019 22:47:55.752 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+15-Jun-2019 22:47:55.753 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+15-Jun-2019 22:47:55.767 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcher'
+15-Jun-2019 22:48:03.518 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Spring WebApplicationInitializers detected on classpath: [com.passer.api.web.WebInitializer@eb1316c]
+15-Jun-2019 22:48:03.820 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'dispatcher'
+15-Jun-2019 22:48:06.576 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+15-Jun-2019 22:48:06.576 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()

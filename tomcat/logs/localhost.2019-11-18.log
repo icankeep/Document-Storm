@@ -1,0 +1,4 @@
+18-Nov-2019 16:45:52.171 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log SessionListener: sessionCreated('5FFA48BD52611569A717559D44D0F619')
+18-Nov-2019 16:45:52.172 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log SessionListener: attributeAdded('5FFA48BD52611569A717559D44D0F619', 'foo', 'bar')
+18-Nov-2019 17:16:27.167 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.ApplicationContext.log SessionListener: sessionDestroyed('5FFA48BD52611569A717559D44D0F619')
+18-Nov-2019 17:16:27.167 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.ApplicationContext.log SessionListener: attributeRemoved('5FFA48BD52611569A717559D44D0F619', 'foo', 'bar')

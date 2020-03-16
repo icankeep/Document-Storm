@@ -1,0 +1,144 @@
+13-Jun-2019 10:27:04.660 SEVERE [http-nio-8080-exec-7] org.apache.coyote.http11.Http11Processor.service Error processing request
+ java.lang.NullPointerException
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:393)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1441)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+13-Jun-2019 10:27:04.660 SEVERE [http-nio-8080-exec-7] org.apache.coyote.http11.Http11Processor.endRequest Error finishing response
+ java.lang.NullPointerException
+	at org.apache.coyote.http11.Http11OutputBuffer.flushBuffer(Http11OutputBuffer.java:520)
+	at org.apache.coyote.http11.Http11OutputBuffer.finishResponse(Http11OutputBuffer.java:319)
+	at org.apache.coyote.http11.Http11Processor.endRequest(Http11Processor.java:1458)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:823)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1441)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+13-Jun-2019 10:27:04.667 SEVERE [http-nio-8080-exec-5] org.apache.coyote.http11.Http11Processor.endRequest Error finishing response
+ java.lang.NullPointerException
+	at org.apache.coyote.http11.Http11OutputBuffer.commit(Http11OutputBuffer.java:352)
+	at org.apache.coyote.http11.Http11Processor.prepareResponse(Http11Processor.java:1288)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:254)
+	at org.apache.coyote.http11.Http11Processor.endRequest(Http11Processor.java:1457)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:823)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1441)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+13-Jun-2019 10:27:06.551 SEVERE [http-nio-8080-exec-3] org.apache.coyote.http11.Http11Processor.service Error processing request
+ java.lang.NullPointerException
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:393)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1441)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+13-Jun-2019 10:27:06.552 SEVERE [http-nio-8080-exec-3] org.apache.coyote.http11.Http11Processor.endRequest Error finishing response
+ java.lang.NullPointerException
+	at org.apache.coyote.http11.Http11OutputBuffer.commit(Http11OutputBuffer.java:352)
+	at org.apache.coyote.http11.Http11Processor.prepareResponse(Http11Processor.java:1288)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:254)
+	at org.apache.coyote.http11.Http11Processor.endRequest(Http11Processor.java:1457)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:823)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1441)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+13-Jun-2019 13:05:41.884 SEVERE [http-nio-8080-exec-6] org.apache.coyote.http11.Http11Processor.service Error processing request
+ java.lang.NullPointerException
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:393)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1441)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+13-Jun-2019 13:05:41.884 SEVERE [http-nio-8080-exec-6] org.apache.coyote.http11.Http11Processor.endRequest Error finishing response
+ java.lang.NullPointerException
+	at org.apache.coyote.http11.Http11OutputBuffer.flushBuffer(Http11OutputBuffer.java:520)
+	at org.apache.coyote.http11.Http11OutputBuffer.finishResponse(Http11OutputBuffer.java:319)
+	at org.apache.coyote.http11.Http11Processor.endRequest(Http11Processor.java:1458)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:823)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1441)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+13-Jun-2019 19:54:44.562 SEVERE [http-nio-8080-exec-1] org.apache.coyote.http11.Http11Processor.service Error processing request
+ java.lang.NullPointerException
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:393)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1441)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+13-Jun-2019 19:54:44.563 SEVERE [http-nio-8080-exec-1] org.apache.coyote.http11.Http11Processor.endRequest Error finishing response
+ java.lang.NullPointerException
+	at org.apache.coyote.http11.Http11OutputBuffer.commit(Http11OutputBuffer.java:352)
+	at org.apache.coyote.http11.Http11Processor.prepareResponse(Http11Processor.java:1288)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:254)
+	at org.apache.coyote.http11.Http11Processor.endRequest(Http11Processor.java:1457)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:823)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1441)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+13-Jun-2019 22:23:11.965 INFO [http-nio-8080-exec-3] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+ java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:422)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:667)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1441)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+

@@ -37,10 +37,10 @@ JDK1.8
 ## 部署DocumentStorm
 （当初部署的时候就觉得属实麻烦，可惜当初没学docker，现在也懒得去改了）
 1. 在主机安装wkhtml
-2. [配置nginx](nginx.conf)
-3. 部署云音乐爬取项目，部署后启动(项目在主文件夹NeteaseCloudMusicApi.tar.gz)
+2. [nginx配置文件](#nginx.conf)，[整个nginx压缩包](nginx.tar.gz)
+3. 部署云音乐爬取项目，部署后启动(项目在主文件夹[NeteaseCloudMusicApi.tar.gz](NeteaseCloudMusicApi.tar.gz)
 4. 部署DocumentStorm，放置在tomcat的webapp下，并更改sever.xml
-5. tomcat配置文件server.xml,在项目主文件夹
+5. tomcat配置文件server.xml,在项目主文件夹,[整个tomcat压缩包](tomcat.tar.gz)
 
 
 ## nginx.conf
