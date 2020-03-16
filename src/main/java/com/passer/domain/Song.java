@@ -7,8 +7,23 @@ import lombok.Data;
 * @author: passer<p>
 * @version：2019年5月20日 下午9:11:50<p>
 */
-@Data
 public class Song {
 	private String id;
 	private String name;
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 }

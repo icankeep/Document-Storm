@@ -14,4 +14,30 @@ public class Comments {
 	private List<Comment> hotComments;
 	private int total;
 	private Song song;
+
+	public List<Comment> getHotComments() {
+		return hotComments;
+	}
+
+	public void setHotComments(List<Comment> hotComments) {
+		this.hotComments = hotComments;
+	}
+
+	public int getTotal() {
+		return total;
+	}
+
+	public void setTotal(int total) {
+		this.total = total;
+	}
+
+	public Song getSong() {
+		return song;
+	}
+
+	public void setSong(Song song) {
+		this.song = song;
+	}
+
+
 }

@@ -7,9 +7,24 @@ import lombok.Data;
 * @author: passer<p>
 * @version：2019年5月20日 下午8:21:22<p>
 */
-@Data
 public class User {
 	private String userId;
 	private String nickname;
+
+	public String getUserId() {
+		return userId;
+	}
+
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+
+	public String getNickname() {
+		return nickname;
+	}
+
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
+	}
 }
 

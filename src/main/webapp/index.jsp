@@ -45,7 +45,12 @@
 </head>
 
 <%
-	Comment comment = CommentsCrawl.getComment();
+	Comment comment = null;
+	try {
+		comment = CommentsCrawl.getComment();
+	} catch (Exception e) {
+		e.printStackTrace();
+	}
 	pageContext.setAttribute("comment", comment);
 %>
 <body>
